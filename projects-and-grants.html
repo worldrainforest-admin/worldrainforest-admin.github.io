@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects and Grants - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Learn about World Rainforest Fund's grant programs and funded conservation projects.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/975415189.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Projects & Grants</h1>
+                <p class="text-xl md:text-2xl">Supporting effective rainforest conservation worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    The World Rainforest Fund provides grants to qualified non-profit organizations undertaking projects of special value to conserve rainforests. We support initiatives that protect biodiversity, empower indigenous communities, advance scientific research, and promote sustainable development. Our grants focus on the most effective strategies for preserving Earth's tropical rainforests and the incredible diversity of life they contain.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Cards Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-12 text-center">Featured Grant Recipients</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Grant 1: Hutukara Yanomami Association -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">Hutukara Yanomami Association</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Brazil</p>
+                        <p class="text-gray-700 mb-4">
+                            Supporting the Yanomami people in protecting the largest indigenous territory of tropical rainforest in the world - over 9.6 million hectares. This grant helps counter threats from gold miners, loggers, and disease, protecting the most biodiverse ecosystem on Earth and the uncontacted tribes within it.
+                        </p>
+                        <a href="#hy" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 2: We Are Guardians -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">We Are Guardians Impact Campaign</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Brazilian Amazon</p>
+                        <p class="text-gray-700 mb-4">
+                            Empowering indigenous Tembe and Guajajara Guardians of the Rainforest to protect their territories through monitoring bases and restoration projects. This grant helped save approximately 1,784 square miles of rainforest in the eastern Amazon basin.
+                        </p>
+                        <a href="#wagic" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 3: Khamai Foundation -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">Khamai Foundation</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Ecuador</p>
+                        <p class="text-gray-700 mb-4">
+                            Protecting the habitat of the highly endangered Mindo harlequin toad in one of the most biodiverse cloud forests in the world. This grant secured critical rainforest habitat and led to the discovery of additional surviving populations of this nearly-extinct species.
+                        </p>
+                        <a href="#khamai" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 4: Earth Guardians -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">Earth Guardians</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Tagba Rainforest, Togo</p>
+                        <p class="text-gray-700 mb-4">
+                            Co-sponsoring the planting of 5,000 native trees to restore a 300-hectare tropical rainforest ecosystem that had been clear-cut. This project provides refuge habitat for red-bellied monkeys and employs local indigenous people in reforestation efforts.
+                        </p>
+                        <a href="#earthg" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 5: ORPIO -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">ORPIO - Indigenous Peoples of Eastern Peru</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Peruvian Amazon</p>
+                        <p class="text-gray-700 mb-4">
+                            Protecting approximately 3,000 square kilometers of highly biodiverse rainforest and isolated indigenous groups in northern Peru. During COVID-19, funds were redirected to provide urgent medical supplies, biosecurity equipment, and support for indigenous communities.
+                        </p>
+                        <a href="#orpio" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 6: Go Conscious Earth -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">Go Conscious Earth</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Congo Basin, DRC</p>
+                        <p class="text-gray-700 mb-4">
+                            Saving Earth's second largest rainforest through a groundbreaking agreement with the DRC government. Our grants helped protect millions of acres of Congo Basin rainforest, built 17 wells providing clean water to 34,000 people, and established community forestry concessions.
+                        </p>
+                        <a href="#gce" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 7: International Rivers -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">International Rivers</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Maranon River, Peru</p>
+                        <p class="text-gray-700 mb-4">
+                            Successfully stopping 22 megadams that would have flooded and destroyed hundreds of thousands of acres of tropical rainforest in Peru. This tremendous victory protected one of the most biodiverse regions on Earth and the indigenous peoples who depend on the river.
+                        </p>
+                        <a href="#ir" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 8: The Borneo Project -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">The Borneo Project</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Borneo, Malaysia</p>
+                        <p class="text-gray-700 mb-4">
+                            Helping stop massive hydroelectric dams in Sarawak that would destroy rainforests and indigenous livelihoods. Supporting the Baram Peace Park initiative and indigenous land rights, protecting critical habitat for orangutans, proboscis monkeys, and countless other species.
+                        </p>
+                        <a href="#borneo" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 9: John Parnell -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">John Parnell</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Ecuadorian Amazon</p>
+                        <p class="text-gray-700 mb-4">
+                            Supporting the Sapara and Sarayaku indigenous peoples with solar-powered radio communications to protect their rainforest territories. Our grant catalyzed a $14 million Leonardo DiCaprio Foundation grant and provided emergency coronavirus protection for indigenous communities.
+                        </p>
+                        <a href="#parnell" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                    <!-- Grant 10: Council for Cultural and Biological Diversity -->
+                    <div class="bg-white  shadow-lg p-8">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-2">Council for Cultural and Biological Diversity/Osa</h3>
+                        <p class="text-sm text-gray-900 font-semibold mb-4">Ecuador</p>
+                        <p class="text-gray-700 mb-4">
+                            Protecting 10,000 acres of the most biodiverse ecosystem on Earth - where the Amazon and Andes meet - for only $3,500. This grant stopped a destructive road project and saved what scientists from the Missouri Botanical Garden confirmed has more species per acre than any ecosystem on the planet.
+                        </p>
+                        <a href="#osa" class="text-blue-600 hover:text-blue-700 font-semibold">
+                            Learn more →
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Grant Sections -->
+
+    <!-- Hutukara Yanomami Association -->
+    <section id="hy" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Hutukara Yanomami Association, Brazil</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        <strong>Represented by Survival International U.S.A. This grant from the World Rainforest Fund was given in 2020.</strong>
+                    </p>
+
+                    <p class="mb-6">
+                        Hutukara Yanomami Association (henceforth, Hutukara) is the organization that the Yanomami indigenous people of the Amazon rainforests and mountains of northern Brazil formed to represent their interests and protect their rainforest homes. The Yanomami are the largest relatively isolated tribe in South America. They are one of the most populous indigenous tribes in Brazil with about 35,000 members. At over 9.6 million hectares, the Yanomami territory in Brazil is twice the size of Switzerland. This territory, along with additional Yanomami territory in Venezuela, makes up the largest indigenous territory of tropical rainforest in the world. It is larger than the entire country of Greece. The leader of this organization is the effective Davi Kopenawa Yanomami, a man of great integrity who won the Right Livelihood Award, a prestigious award for those offering "answers to the most urgent challenges facing us today", in 2019. It is referred to as the "alternate Nobel Prize". Survival International U.S.A. is representing Hutukara and helping with the transfer of the grant money from the World Rainforest Fund to Hutukara. Survival International is a human rights organization formed in 1969 that campaigns for the rights of indigenous peoples, including uncontacted peoples. It also won the right Livelihood Award, in 1989. Hutukara works to protect both its own land and the land of uncontacted Yanomami people. These are tribes that have never been contacted by any people of any race. Although most Yanomami are in contact with non-indigenous society, one uncontacted group is known to live in the area, and authorities are investigating signs of up to six other uncontacted communities living there. They have made it clear that they do not want to be contacted. Tropical rainforest is the most biodiverse ecosystem on Earth, meaning it has the most species of animals, plants, fungi, and other organisms per acre than any ecosystem on the planet. Of rainforests, the rainforest of the Amazon River Basin has the highest biodiversity in the world. It is the world's largest rainforest. Of the Amazon rainforest, as with all rainforest, indigenous land has the highest biodiversity, because it is the least disturbed and destroyed by exploiters. Of rainforests occupied by indigenous people, rainforests of uncontacted tribes are the most biodiverse, because it is the very least impacted by those who would destroy rainforests. The uncontacted Yanomami are one of the largest uncontacted tribes on Earth. They are not contacted even by the contacted Yanomami.
+                    </p>
+
+                    <p class="mb-6">
+                        The current threat that the grant from the World Rainforest Fund will help counter is from gold miners. The rainforest of the Yanomami is being invaded by up to 20,000 goldminers in northern Brazil, who spread malaria and are polluting many of the rivers with mercury, causing serious health and livelihood effects on the Yanomami. Gold mines destroy and pollute huge tracts of rainforest. There are also threats from loggers and farmers who plant cash crops. The uncontacted people have never been exposed to the diseases of other people, so have never developed immunity to them. So if exploiters enter their land, they could easily be decimated by disease from these invaders. Even the flu would have a devastating impact on them, greatly reducing their numbers. The coronavirus now poses an additional threat. A massive die off of them would leave be much less of them to protect their rainforest home, and it would be destroyed. They are the protectors of the most biodiverse ecosystem on Earth.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant will aid them with the necessary radio communication necessary to protect their rainforest home and to protect them from disease, including the coronavirus. It will also be used to support the Yanomami in expelling illegal goldminers from their land. This includes crucial publicity.
+                    </p>
+
+                    <p class="mb-6">
+                        The Amazon rainforest where the Yanomami live has the highest number of species of both animals and plants of any ecosystem on Earth. These include the capybara, the world's largest rodent, a semi-aquatic one! The Amazon River dolphin is a rare freshwater dolphin. The giant anteater actually eats termites by invading their mounds, and is large and beautiful. The golden lion tamarin is a cute, miniature primate that mates for life. The jaguar might be the world's most gorgeous cat. Amazing birds include the beautiful king vulture; several species of colorful parrots, including giant ones called macaws; many species of strange, beautiful toucans; and spectacled owls. Reptiles include black caimans, anacondas reaching 30 feet, spectacularly colorful coral snakes, green iguanas, and common basilisk lizards, which can run on the surface of water. Amphibians include colorful poison dart frogs and glass frogs, which have transparent and translucent abdominal skin. Large, beautiful butterflies, such as the blue morpho, and other amazing insects abound. Plants include the beautiful Heliconia; rubber tree; mahogany tree; thousands of species of orchids; cacao plant (from which chocolate is made); giant water lilies; passion fruit; hundreds of species of bromeliads growing on trees; vines hanging from trees, including monkey bush vines; banana trees; and coffee plants, which can grow 30 feet tall.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">Contact:</p>
+                        <p class="mb-4">
+                            Davi Kopenawa<br>
+                            <a href="https://www.rightlivelihoodaward.org/laureates/davi-kopenawa-hutukara-yanomami-association" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.rightlivelihoodaward.org/laureates/davi-kopenawa-hutukara-yanomami-association</a><br>
+                            Hutukara Yanomami Association, Brazil
+                        </p>
+                        <p class="font-semibold mb-2">Representing Organization:</p>
+                        <p>
+                            Survival International U.S.A.<br>
+                            P.O. Box 26345<br>
+                            San Francisco, CA 94126<br>
+                            Daniel Lavelle (510)-858-3950 (office)<br>
+                            <a href="mailto:dl@survivalinternational.org" class="text-blue-600 hover:text-blue-700 underline">dl@survivalinternational.org</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- We Are Guardians Impact Campaign -->
+    <section id="wagic" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">We Are Guardians Impact Campaign - Guardians of the Rainforest</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        <strong>"We Are Guardians" impact campaign</strong> (managed by One Forest) via Random Good Foundation's fiscal sponsorship. This support empowers indigenous Tembe and Guajajara <strong>Guardians of the Rainforest</strong> to be able to guard and preserve their rainforest in the Brazilian Amazon. The Tembe leader is Puyr Tembe, a woman of exceptional integrity and skill.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant supported the setting up of two monitoring bases in the rainforests of the eastern Amazon basin in Brazil at strategic points within the territories of Alto Rio Guama, which is 1,081 square miles and belongs to the indigenous Tembe people, and Arariboia, which is 1,594 square miles and belongs to the indigenous Guajajara people. These are guard stations where the indigenous people of the rainforest act as guards to prevent destroyers of the rainforest from entering their rainforest territory. This will help stop the advance of agricultural frontiers, illegal logging, and other predatory activities that threaten the integrity of the forests. Armed with personal protective equipment and a profound reverence for the forest, the indigenous guardians embody the essence of life preservation. These bases were designed as comprehensive operational centers, providing essential support and reference points for the guardians during their extensive patrols throughout the territory. They are essential to protect the rainforest from the many exploiters who constantly attempt to cut the rainforest and shoot the wildlife for profit. Without them, much of the rainforest there would be destroyed. With these guard posts, the rainforest is more secure. The bases will be equipped with facilities for carrying out critical tasks, including charging stations for electronic equipment used in operations, as well as the necessary infrastructure ensuring efficient communications and rapid access to vital information, necessary for protection of the rainforest.
+                    </p>
+
+                    <p class="mb-6">
+                        Our grant also supported restoration of the rainforest, representing a rebirth of lands once degraded. These protectors of clear rivers and biodiversity planted native trees, laboring tirelessly to restore rainforest and its many wonderful species of plants and animals.
+                    </p>
+
+                    <p class="mb-6">
+                        Our support also provided comprehensive facilities for food and personal hygiene and health, addressing the basic needs of the guardians during multi-day patrols. These facilities have been designed to promote the comfort and well-being of the guardians, enhancing their ability to perform their duties effectively and safely.
+                    </p>
+
+                    <p class="mb-6">
+                        Sixty-nine square miles of the Alto Rio Guama have been logged. Much of this logging appears to originate from an area without Indigenous villages nearby, which was the site of a violent conflict between invaders and the Tembe people in the 1990's. Since then, they have not been able to protect this point of entry, until 2023, when the Brazilian government under President Lula commissioned a military police operation to remove all of the non-Indigenous settlers. It is now the task of the Tembe guardians to patrol and protect the perimeter to ensure that the settlers do not return, and immediately report any instances of invasion or deforestation to the police. This work will protect the remaining 1,012 square miles of unlogged forest and the reforestation projects the communities are planning to implement. It is critical to have security outposts in points of entry that the indigenous forest guardians can inhabit for their patrols.
+                    </p>
+
+                    <p class="mb-6">
+                        Satellite imagery shows that where there are indigenous forest guardians at borders of the rainforest, there is less deforestation. This is the most effective way to save rainforest, according to what the indigenous people decided at their meetings. The estimated area of rainforest that we helped save is about 1,784 square miles of unlogged forest.
+                    </p>
+
+                    <p class="mb-6">
+                        The area of the Amazon where the territories of Alto Rio Guama and Arariboia are located is one of the most biodiverse ecosystems in the world. These territories are in the Amazon rainforest, the most biologically diverse ecosystem on our planet, having approximately 10% of the world's species. This ecosystem is home to a myriad of majestic trees, impressive mammals, colorful birds, fascinating reptiles, unusual amphibians, diverse fish, intriguing insects, and a countless variety of plants. Many of these species are found nowhere else in the world.
+                    </p>
+
+                    <p class="mb-6">
+                        In addition to its intrinsic importance for the conservation of global biodiversity, the Amazon plays a fundamental role in providing essential ecosystem services, including global and local climate regulation, water purification, pollination of agricultural crops, food, and medicines.
+                    </p>
+
+                    <p class="mb-6">
+                        The film "We Are Guardians" demonstrates the work of the indigenous people saving this rainforest, the very people benefitting from our grant, following the Tembe and Guajajara guardians on missions from 2019 to 2022. Learn about this film to see how you can help: <a href="http://weareguardiansfilm.com/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">weareguardiansfilm.com</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khamai Foundation -->
+    <section id="khamai" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Khamai Foundation - Ecuador</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        The <strong>Khamai Foundation</strong> in Ecuador is an emerging foundation led by scientists and young conservationists devoted to reversing the tropical biodiversity crisis and helping mitigate the effects of global warming. Khamai focuses on conservation issues and areas not addressed by other NGOs or by the Ministry of Environment in Ecuador. The foundation is unique in having the following goals:
+                    </p>
+
+                    <ul class="mb-6 space-y-2">
+                        <li>a) Protecting ecosystems outside the current system of government-protected areas.</li>
+                        <li>b) Creating reserves targeting amphibians and reptiles, which are overlooked groups.</li>
+                        <li>c) Protecting species not yet described or still not evaluated by the International Union for the Conservation of Nature.</li>
+                        <li>d) Accelerating the discovery of new species.</li>
+                    </ul>
+
+                    <p class="mb-6">
+                        This grant made possible the purchase and protection of the rainforest habitat of the highly endangered, almost extinct, and beautiful Mindo harlequin toad (<em>Atelopus mindoensis</em>) in the Mindo area in Ecuador. This simultaneously protects thousands of other species of plants and animals within this rainforest reserve. The rainforest habitat that was saved is also used by many other species, many threatened, including the cute and threatened olinguito (<em>Bassaricyon neblina</em>), a mammal of the racoon family, several species of monkeys, gorgeous birds, reptiles, amphibians, butterflies, orchids, vines, and trees. Many of these species are found nowhere else on Earth. It is a key wildlife corridor for several species, including the mountain lion and Andean bear.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant also allowed fieldwork and monitoring, including staff roles such as biologists, park rangers, and assistants. This resulted in the discovery of additional survivors of the Mindo toad, revealing which critical areas of rainforest should receive urgent protection and continuous monitoring efforts.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant helped Khamai Foundation provide an economic livelihood for both the foundation and the community of Mindo, offering the possibility of transitioning to another income source rather than rainforest-destroying activities such as livestock grazing. Khamai Foundation also made an educational video to educate people and advocate for conservation of the rainforests and animals and plants in the greater project area.
+                    </p>
+
+                    <p class="mb-6">
+                        This rainforest is included as a Tropical Andes Biodiversity Hotspot. The general area of Mindo has been identified as one of the most, if not the most, biodiverse cloud forests in the world, with over 130 species of amphibians and reptiles (Arteaga et al., 2013). This project had to be acted on very quickly by the World Rainforest Fund because this toad was under immediate threat from pollution, cutting of its rainforest habitat, and the potential introduction of the deadly chytrid fungus, which is infecting and killing frog and toad species worldwide. In addition, Khamai Foundation had to act extremely fast, within four months, to secure the land and monitor the toad habitat during the breeding season of the species, which coincides with the local low-water season (August-December). No other conservation organization was able and willing to act as quickly as this project required, nor had the capacity to inspire matching donations in such a timely fashion, the way the World Rainforest Fund did.
+                    </p>
+
+                    <p class="mb-6">
+                        The Khamai Foundation is now attempting to raise another approximately $150,000.00 to purchase an adjacent rainforest, also in the highest area of biodiversity on the planet, to protect a tremendous number of species.
+                    </p>
+
+                    <p class="mb-6">
+                        Khamai Foundation's CEO, Dr. Alejandro Arteaga, has organized and led expeditions in Ecuador that resulted in the rediscovery of six harlequin toad species previously thought extinct and even classified as extinct by the International Union for the Conservation of Nature.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">Reference:</p>
+                        <p>Arteaga A., Bustamante L., & Guayasamin, J. M. (2013). The amphibians and reptiles of Mindo. Universidad Tecnologica Indoamerica, Quito, 257 pp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Earth Guardians -->
+    <section id="earthg" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Earth Guardians - Tagba Rainforest, Togo</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        The World Rainforest Fund co-sponsored a project by <strong>Earth Guardians</strong> for planting 5,000 native trees in the Tagba rainforest, in the African nation of Togo, getting a start in restoring a 300-hectare tropical rainforest ecosystem that had been clear-cut. This reforested area will serve as a critical refuge habitat for red-bellied monkeys (Cercopithecus erythrogaster erythrogaster), aiding in the reduction of conflicts between wildlife and humans, and promoting ecosystem balance and the dispersal of seeds by these primates. Earth Guardians will strategically plant trees that are capable of withstanding various pressures from humans. This project will be led by local, indigenous Earth Guardian crews who reside in or near this forest, and rely on it for their well-being.
+                    </p>
+
+                    <p class="mb-6">
+                        Earth Guardians projects are spearheaded by indigenous communities, with a special emphasis on empowering youth and women. In every project they undertake, village communities play a pivotal role. They not only contribute seedlings for reforestation, but actively lead the planting efforts and are integral members of project planning and monitoring committees, involved at every stage of decision-making.
+                    </p>
+
+                    <p class="mb-6">
+                        This initiative will bolster a natural system that will benefit local people, plants, and animals, while contributing to the restoration of 300 hectares of rainforest. The funds from the World Rainforest Fund for this project will primarily be used to purchase seedlings for reforestation, organize the reforestation activity, and establish a monitoring system for the plants in the rainforest. This project will employ local indigenous people to engage in various tasks, including land maintenance, digging, and demarcating plots, in addition to leading the actual reforestation itself. This will give them a source of income, so they do not need to destroy the nearby intact rainforest to support themselves and their families. If it were not for this employment, the nearby rainforest would likely be destroyed. Thus, this project has a double benefit. It restores a clearcut area to intact rainforest while protecting a pristine, biodiverse standing one. The indigenous communities will oversee reforestation progress, conduct bi-weekly visits to replace trees, establish firebreaks during high water-stress periods, and implement strategies to combat brush fires and other human actions that may impede plant growth.
+                    </p>
+
+                    <p class="mb-6">
+                        The support we gave will result in planting 5,000-7,000 trees and working toward reforesting 10-20 hectares of a 300 hectare highly-biologically diverse community forest; training up to 50 farmers in agroecology; supporting two women's cooperatives (each with up to 30 members) to develop income-generating activities aimed at reducing pressure on forest resources; and training 50 individuals in forest fire prevention.
+                    </p>
+
+                    <p class="mb-6">
+                        The Tagba forest is a recognized community forest, which is a protected area led by local, native people, while recognized as protected by the Togolese government. This rainforest is in Ecological zone IV, which is one of the most biodiverse in Africa. The forests of this zone are part of the places where plant diversity is particularly high in sub-Saharan Africa (La Ferla et al., 2001). It is in a hotspot most threatened in the world by deforestation activities. The number of plant species is among the highest in West Africa. It has over 900 tree species. Among the flora of Togo that are adapted to high rainfall, 57% of the species are rare. Interesting animal species include the Togo-serval (a small big cat unique to Togo), West African crocodiles, various monkey species, hippopotamuses, and the African forest elephant.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">References:</p>
+                        <p>La Ferla B., Taplin J., Ockwell, D., & Lovetti, J. (2001). Continental scale patterns of biodiversity: can higher taxa accurately predict African plant distributions? <em>Botanical Journal of the Linnean Society</em> 138: 225-235.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORPIO -->
+    <section id="orpio" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">The Regional Organization of Indigenous Peoples of Eastern Peru</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        <strong>Represented by the Amazon Conservation Team. This grant from the World Rainforest Fund was awarded in 2020.</strong>
+                    </p>
+
+                    <p class="mb-6">
+                        The Regional Organization of Indigenous Peoples of Eastern Peru (ORPIO) works to defend the rights and territories of its partner indigenous communities in Peru by promoting territorial land rights, community forest monitoring and vigilance, and political and economic autonomy. The Amazon Conservation Team (ACT) partners with indigenous and local peoples of the Amazon to protect tropical forests and strengthen traditional culture. ORPIO and ACT collaborate in northern Peru to improve protection for indigenous groups in voluntary isolation (uncontacted tribes) by conducting research, facilitating community workshops, and providing technical mapping training.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant from the World Rainforest Fund was originally intended to contribute to the protection of approximately 3,000 square kilometers of highly biodiverse rainforest in northern Peru, and the isolated indigenous groups that call it home, by collaborating with indigenous communities to strengthen their abilities to manage and protect their territory. This would include facilitating territorial land rights processes, and supporting community-based forest monitoring.
+                    </p>
+
+                    <p class="mb-6">
+                        However, as the Covid-19 pandemic continued to spread in the Amazon, at ORPIO's request, WRF redirected the funds to ORPIO's and ACT's efforts to respond to the urgent needs of indigenous communities of the Peruvian Amazon to protect their lives, livelihoods, and in turn, their ancestral forests and isolated neighbors during this emergency. This includes facilitating the delivery of biosecurity equipment such as face masks and sanitizing materials, as well as food supplies, medicine and medical care, and fuel for transportation to health centers. The COVID-19 pandemic is spreading quickly in the Amazon region. As of June 26, 8,743 people have been infected and 334 have died in the state of Loreto, Peru, and 67,267 people have been infected and 2,731 have died in the neighboring Brazilian state of Amazonas. Indigenous communities are among the most vulnerable and they are pleading for support. Without a healthy, robust population of indigenous people to defend the rainforest, it is sure to disappear. They are necessary to preserve the rainforest.
+                    </p>
+
+                    <p class="mb-6">
+                        This grant will contribute to the protection of a total of 300,000 hectares of rainforest. This is 3,000 square kilometers, or about 741,000 acres. This grant is protecting the lowland tropical rainforests around Iquitos, Peru. Indigenous-led protection efforts will focus on the proposed Yavari Mirim indigenous reserve, which is approximately 3,400,000 acres, or about 13,800 square kilometers, and its adjacent northern buffer area in the headwaters of the Mayoruna River watershed. The Yavari Mirim valley has shown remarkably high levels of biodiversity in recent biological surveys, despite being located just 60 kilometers south of the city of Iquitos and after being overrun by rubber tappers at the beginning of the 20th century and illegal loggers in recent years. Experts recognize its rainforests as being among the most diverse tree communities in the world. Recent biological inventories registered 1,650 species of plants in Yavari Mirim. There are an estimated 2,500-3,500 plant species present in total area to be protected, including more than 2,000 tree and shrub species. Many keystone tree species now mostly eradicated in other areas of Peru can still found in Yavari Mirim, including palo de rosa and other economically important timber species, resulting in high logging pressures.
+                    </p>
+
+                    <p class="mb-6">
+                        This rainforest is also among the world leaders in richness of mammal species. In Yavari Mirin, 39 large terrestrial mammal species were recorded, many with healthy populations, and there are believed to be 150 mammal species present in the total area to be protected by this World Rainforest Fund grant. Twenty-four of the species confirmed or thought to be in the area are listed as threatened by the International Union for Conservation of Nature or by the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES), including the giant river otter, the bush dog, the lowland tapir, the giant armadillo, the giant anteater, and the red uakari monkey (Cacajao calvus), an exceptionally rare primate that resides only in palm swamp habitats and is protected nowhere else in Peru. Yavari Mirim has at least 11 populations of this species with some groups having more than 200 individuals. About half of these populations are in areas currently slated for logging activity if the reserve is not created.
+                    </p>
+
+                    <p class="mb-6">
+                        Yavari Mirim is also home to a remarkable diversity of birds, with some 400 species identified and an estimated 500 within the reserve area, including healthy populations of large macaws and parrots. The rare red-fan parrot (Deroptyus accipitrinus) was seen several times in this region, after previously only being known in Peru from a single record and not reported for half a century. This area also likely serves as an important flyway for Amazonian birds, as field biologists have observed large-scale migration events with a diverse mix of bird species.
+                    </p>
+
+                    <p class="mb-6">
+                        The Yavari Marim Basin is composed of a mosaic of aquatic habitats, including flooded forests, palm swamps, oxbow lakes, and black water, whitewater, and clear water rivers. Located at the headwaters of six major regional rivers, this region is an important spawning ground for immense Amazonian fish species, including economically important species like arapaima (Arapaima gigas) and large catfish. Some of the fish are in a symbiotic relationship with trees, whereby they eat the fruit of the trees and disperse the seeds in the fruit for the trees. Young trees that are dispersed and grow far from their parents are much less likely to be shaded to death by other trees, eaten by herbivores, or attacked by fungi, bacteria, and viruses. Recent biological inventories identified 240 species of fish, with ten new to science and twenty new to Peru. Roughly one in ten of the fish species collected in the area represented new records for Peru, with many new to science. Experts estimate there are more than 400 species of fish in the region, as well as 115 species of amphibians and 100 species reptiles, including the black caiman and Amazonian river turtle.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">Contact:</p>
+                        <p class="mb-4">
+                            The Regional Organization of Indigenous Peoples of Eastern Peru (ORPIO)<br>
+                            Av. Del Ejercito 1718<br>
+                            Iquitos, Loreto, Peru<br>
+                            <a href="https://www.orpio.org.pe/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.orpio.org.pe/</a>
+                        </p>
+                        <p class="font-semibold mb-2">Representing Organization:</p>
+                        <p>
+                            The Amazon Conservation Team (ACT)<br>
+                            4211 North Fairfax Drive<br>
+                            Arlington, VA 22203<br>
+                            <a href="mailto:info@amazonteam.org" class="text-blue-600 hover:text-blue-700 underline">info@amazonteam.org</a><br>
+                            <a href="https://www.amazonteam.org/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.amazonteam.org/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go Conscious Earth -->
+    <section id="gce" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Go Conscious Earth: Saving Earth's Second Largest Rainforest</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        The World Rainforest Fund has recently given grants to Go Conscious Earth (GCE). It also conceived and advised on a crowdfunding campaign that raised over $50,000.00 for GCE. This non-profit organization works to save the rainforest of the Congo River Basin and wetlands and Lake Tumba near this rainforest. It has offices in the Democratic Republic of the Congo (DRC), and has an office and 501c3 (tax-exempt) status in the US.
+                    </p>
+
+                    <p class="mb-6">
+                        The Congo Basin rainforest is the second largest in the world, second only to the Amazon Basin. It has among the most species of animals and plants of any ecosystem on Earth. It has some of Earth's most unique and valuable species, including the rare Bonobo Chimpanzee. This is our closest living relative; we have 98.7% of our genes in common with it! It is peaceful, highly intelligent, and empathic. Unlike common chimpanzees and humans, bonobos never settle disputes through violence or fighting. They live only in the Congo Basin, and if this rainforest is destroyed, they will be lost forever. They are endangered from poaching and destruction of their rainforest home.
+                    </p>
+
+                    <p class="mb-6">
+                        This rainforest is also home to the endangered African Forest Elephant, the smallest of the Earth's three species of elephants, and the only one that lives most of its life in the forest. Due to a slower birth rate than other elephant species, the forest elephant takes longer to recover from poaching, which caused its population to fall by 65% from 2002 to 2014. It lives in the greater Congo Basin, so loss of this forest will not send it entirely extinct, but will remove much of its prime habitat, tremendously reduce its numbers, and greatly decrease its odds of survival.
+                    </p>
+
+                    <p class="mb-6">
+                        This forest is home to the unique Pygmy people and other indigenous people who depend on it for their survival. This rainforest has been found to be particularly good at removing the main greenhouse gas, carbon dioxide, from the atmosphere, so is a key to helping stop human-induced global climate change.
+                    </p>
+
+                    <p class="mb-6">
+                        The Congo Basin rainforest contains a large freshwater lake, Lake Tumba, which is generally 295 square miles, although its size varies seasonally. It is connected to the Congo River. Lake Tumba has 114 species of fish and supports important fisheries. The lake lies at the center of the Tumba-Ngiri-Maindombe area, designated a Wetland of International Importance by the Ramsar Convention in 2008. It has large areas of wetlands with high species diversity. Lake Tumba is home to over 100,000 indigenous people. All of the people living there are without adequate food, clean water, healthcare, education, electricity, and transportation. In their efforts to survive and feed their families, they have been forced to use unsustainable farming and fishing techniques that harm the rainforest and the lake. They want to preserve their homeland, but they need more resources to be able to implement viable alternatives.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE is headed by Godi Godar, eldest son of the chief of the Bantomba tribe. As a result of his lineage, he has strong generational ties to the communities in the area, and high credibility and close relationships with the community, local and indigenous peoples, and the DRC government. In 2014, he secured an important agreement between his village and neighboring villages, and the DRC government. The DRC government signed an agreement to preserve one million acres of rainforest and wetlands, and not allow corporate and foreign exploiters to come in and destroy the rainforest or the lake. In return, GCE must provide for the needs of the people in this entire million acres of rainforest. If this is not accomplished within a few years, the DRC will open the rainforest and lake to exploitation and destruction. If GCE can provide for the local people in this time frame, the DRC government will permanently preserve the rainforest and lake. This agreement was signed by the DRC Ministry of the Environment and the local indigenous communities, including the Bantomba and Pygmy people. It is legally supported by the new federal law guaranteeing tribal land rights and rainforest protection. Godi Godar brought the local communities together for a series of meetings to define the needs of each community and re-establish control over their forest homeland, with the attendance and support of the Ministry of Environment of the DRC government.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE has established an integrated protection plan for the rainforest and lake, including long-term plans for regional economic and community development. GCE realizes that rainforest conservation, endangered animal protection, and economic and community development are inextricably linked.
+                    </p>
+
+                    <p class="mb-6">
+                        Most of the local and indigenous people do not have access to clean water. This is the biggest need of the people, and most important action item to keep GCE's part of the agreement with the DRC government, and to win the crucially-needed support of the local people for conservation of the rainforest. Most people draw their water from Lake Tumba, which is contaminated because of the lack of sanitation in the surrounding villages. The only wells that exist there are wells that are excavated by hand shovel and tend to run dry. In February of 2016, GCE built five community water wells in five villages around Lake Tumba, providing the only source of clean water to 10,000 people. They also provided technology that allows the villagers, with the help of GCE, to build hundreds of wells at a fraction of the cost of traditional well-building for the region.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE has developed and implemented anti-poaching and conservation initiatives. The former are important because of poaching for the bush meat of elephants, bonobos, and other wildlife. They are helping restore the ecology of Lake Tumba, which suffers from pollution.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE is an all-volunteer organization. Through the end of 2015, GCE's operational costs were less than 7% of the total revenues for the year.
+                    </p>
+
+                    <p class="mb-6">
+                        Part of its approach is to help the DRC government fulfill its constitutional promise to make rainforest conservation and anti-poverty initiatives a reality in what are some of the poorest areas in the world. It raises awareness about rainforest destruction. GCE is securing the tribal land rights for the indigenous people living in the area. GCE also helped the local villages form Tribal Councils, which monitor and safeguard the wells, and implement GCE initiatives for the villages they represent.
+                    </p>
+
+                    <p class="mb-6">
+                        It is committed to building community health centers, schools, and women's and maternity centers; aiding in sustainable long-term farming and fishing initiatives; helping build forest ranger programs to end illegal logging and protect the endangered animals living in the region; and building centers for women's income generation. Empowering women to earn more income generally results in them having less children. This alleviates the over-population problem, which is one of the major causes of environmental destruction.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE is working with neighboring tribes and the DRC government to establish additional areas of protected rainforest. Because of GCE's success, it has been approached by villages in neighboring areas to help protect their rainforest homeland and support their communities. In fact, it is already beginning the process of conserving an adjacent one million acres of rainforest. GCE is working with the communities in this rainforest to create and implement projects that the communities decide are necessary for their health, survival, and well-being.
+                    </p>
+
+                    <p class="mb-6">
+                        Logging, commercial farming, and poaching are all still taking their toll on the region. In addition to cutting down parts of the rainforest, logging roads in the Congo rainforest also open up vast areas to commercial hunting of wildlife, including Bonobo Chimps and monkeys. Go Conscious Earth is needed more than ever to stop these destructive practices.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE works to save the Congo Basin Rainforest, the world's second largest rainforest, one of the most biodiverse, and one of the greatest removers of the major greenhouse gas, carbon dioxide, on Earth. It partners with forest-dependent communities to protect the Congo Basin Rainforest, improve the livelihood of the people, and support global climate stability. GCE negotiated a signed agreement with the government of the Democratic Republic of the Congo (DRC), in which the government agreed to protect millions of acres of rainforest as parks run by the local, indigenous people in the Congo Basin Rainforest. In return, CGE agreed to drill wells for the local and indigenous people, so they could have a clean water supply. Lake Tumba, a large local lake there, is polluted, and clean water in the area is in very short supply. GCE further agreed to build schools and develop sustainable agriculture for the people. The World Rainforest Fund has helped save millions of acres of Congo Basin Rainforest by supporting GCE in its projects. The Congo government has kept its word and protected the rainforest. GCE and the Congo government set up reserves administered by local and indigenous people, assuring lasting preservation, because the reserves have the support of the local people, as well as the federal government, which also recognizes the reserves as protected areas.
+                    </p>
+
+                    <p class="mb-6">
+                        GCE's projects are located in the Lake Tumba region of Equateur Province, in the DRC. As the world's largest swamp forest, second largest wetland area, and home to the largest Ramsar Freshwater Wetland of International Importance, the Lake Tumba landscape is known for its extraordinary biodiversity. Two million people depend on this area's rich forests, marshes, savannahs and meadows, seasonally-flooded woodlands and lakes, floating prairies, ponds and rivers - as well as the renowned carbon dense peatlands.
+                    </p>
+
+                    <p class="mb-6">
+                        The Congo Basin Rainforest is the second largest carbon reserve in the world, storing carbon in trees, keeping the main greenhouse gas, carbon dioxide, out of the atmosphere, and thus countering the effects of human-induced climate change. The DRC's above-ground forests store 24 billion tons of carbon locked in its vegetation. This would actually amount to 88 billion tons of carbon released into the atmosphere if the forests are cut or destroyed. Carbon stored in the DRC's portion of the Basin exists in a matrix of both living, above-ground forest vegetation and partially decomposed below ground vegetable matter, in the form of peat. Peatlands are intensely carbon-rich areas that cover a mere three percent of the Earth's surface, yet store one-third of the world's soil carbon. The DRC contains over half of the world's below-round carbon stock, stored in the vitally important Cuvette Central Peatland Complex. Cuvette stores 30 percent of the world's tropical carbon, and has soil stocks equivalent to the above-ground vegetation of the entire Congo Basin Rainforest, spanning six African nations. Cuvette stores 33 billion tons of carbon, an amount equal to 20 years of U.S. fossil fuel emissions! The long-term maintenance of these carbon-storing forests and peat bogs is essential to global climate stability and mitigation of excess carbon emissions caused by humans.
+                    </p>
+
+                    <div class="bg-white  p-6 mb-6">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-4">GCE Action Summary 2020-2023</h3>
+                        <p class="mb-4">
+                            With strong ties to the local community and government, GCE was able to secure a temporary agreement with the DRC federal government which protected one million acres of land surrounding indigenous and local villages. In exchange, GCE promised to work with the people to create sustainable development initiatives such as their clean water program, which has provided drinkable well water to thousands. GCE's accomplishments thus far have not only protected the health of the rainforest, wildlife, and people, but have also proven the success of community-based conservation and anti-poverty initiatives to the DRC government. GCE is now positioned for even greater progress, as it continues working closely with communities to implement the DRC's unprecedented national Local Community Forestry Concessions (LCFCs) land-rights law (2016), which ensure forest-dependent rights of local communities to their customary and ancestral lands in perpetuity.
+                        </p>
+                    </div>
+
+                    <div class="bg-white  p-6 mb-6">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-4">Well Installations</h3>
+                        <p class="mb-4">
+                            Using grants from the World rainforest Fund and others, GCE ended 2019 with Godi Godar's successful trip to Lake Tumba to complete the installation of six wells in the villages of: Bokonga, Bokaka Mboboko, Negelo Monzoi, Olo, and Ikoko Bonginda. GCE has now built a total of 17 wells, serving approximately 34,000 people with clean water!
+                        </p>
+                    </div>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="mb-4">
+                            Learn more about Go Conscious Earth at: <a href="http://www.gcearth.org/" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">www.gcearth.org</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Rivers -->
+    <section id="ir" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">International Rivers</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        We supported International Rivers' work to protect the Maranon River in Peru. International Rivers is one of the most effective organizations working to protect rivers from dams.
+                    </p>
+
+                    <p class="mb-6">
+                        Twenty-two megadams that would have flooded and permanently destroyed large forested areas in Peru were planned by the government. With our grant and additional funds, International Rivers was able to continue campaigning, to stop Chadin 2 Dam on the Maranon, and to support communities and legal actions. As of now, all 22 dams have been stopped! The exposure of corruption implicating Brazilian companies and Peruvian government officials in the Chadin 2 dam helped with these victories. Together, International Rivers, the World Rainforest Fund, and other allies won a tremendous set of victories. To paraphrase Ms. Aguirre, principal campaigner on this project, the World Rainforest Fund grant was essential for helping to cross a threshold to enable them to protect the forests that the dams would have destroyed. The dams would have flooded and destroyed hundreds of thousands of acres of tropical dry forest and tropical rainforest. Farmers would have lost their crops permanently. Climate change would have been greatly exacerbated by the loss of this large carbon sink, and the addition to the release of the powerful greenhouse gas methane when the trees decomposed under water.
+                    </p>
+
+                    <p class="mb-6">
+                        The dense and roadless rainforests and dry forests of the Maranon River Basin, where many of the 22 dams were planned and stopped, are recognized as being among the most biodiverse regions on Earth. The Maranon River and its tributaries provide habitat for many species, including monkeys; jaguars; interesting bats; squirrels; amazing birds, including condors and parrots, such as the yellow-eared parrot; white caimans (caimans are related to alligators); black caimans; gorgeous frogs; beautiful butterflies, including up to 21 species that have not yet been described and classified by scientists; spectacular tree species, including wax palms; and beautiful orchids, including 26 newly-discovered species. It has many endangered species and many found nowhere else. The region has 64 rare bird species, with 26 of these found only in Peru. The Pacaya-Samiria National Reserve, one of the largest in Peru, is located between the Maranon and Ucayali rivers. Animal and plant life is abundant and extremely varied in the reserve. The reserve's waters are home to gray and pink dolphins, Amazonian manatees, giant river otters, black caimans, and giant South American river turtles. Land species include jaguars, and capuchin and spider monkeys. The Black Spider Monkey, orange-chested spider monkey, woolly monkey, and howler monkey are all endangered. Stopping the dams saved all of these animals and plants.
+                    </p>
+
+                    <p class="mb-6">
+                        The river is a tributary of the Amazon River. Almost 14% of the Peruvian population, hundreds of thousands of people, depend on the river to survive. They include indigenous Amazon peoples, Andean peasants, and urban communities. These people and communities were saved by stopping the dams.
+                    </p>
+
+                    <p class="mb-6">
+                        Chadin 2 dam on the Maranon would have created a reservoir of 142 Km2 or 54.82 square miles flooding an ecosystem known as the seasonally dry forests of the Maranon, which has one of the highest levels of endemism in Peru. If the Chadin 2 and Veracruz projects are carried out, these would generate serious environmental impacts, many of them irreversible. They would obstruct fish migration and nutrient transport, thereby impairing food supply, spawning, and biota refuge in the river. By affecting the migration routes for fish species, they would impact indigenous territories such as the Awajun and the Wampis, as well as communities that live in the lower areas of the river and the Amazon basin.
+                    </p>
+
+                    <p class="mb-6">
+                        The World Rainforest Fund grant, together with grants from other funding organizations, funded campaigns to stop the construction of the Chadin 2 dam. The dam builders do not have a license for now. Stopping this dam was very important, and has increased awareness in Peru about the destructiveness of dams, in the populace, government politicians, and Brazilian investors and companies. Because of this increased awareness, 24 more dams planned on the same river are stopped for now, and hopefully will be stopped forever.
+                    </p>
+
+                    <p class="mb-6">
+                        Three more dams are planned in Ecuador on the Santiago River, a tributary of the Maranon originating in Ecuador's Cordillera del Condor. The Cordillera is also threatened by large mining projects. The rainforests of the Santiago River basin in Ecuador are also roadless and recognized as among the most biodiverse regions in the world. The World Rainforest Fund is considering a future grant to protect the Cordillera and the Santiago River Basin.
+                    </p>
+
+                    <p class="mb-6">
+                        The basins of the Maranon and the Santiago are inhabited by the Awajun and Wampis indigenous peoples in Peru, and the Shuar and Achuar indigenous peoples in Ecuador, among others. These peoples have created an impressive track record of collectively effectively managing their critical ecosystems. They have established internal rules and regulations for forest utilization, hunting, fishing, and the use of non-timber resources. The Maranon and its numerous tributaries are the lifeline of the Andean Amazon rainforest. The region's biodiversity and the indigenous systems of sustainably managing ecosystems are at great risk from dam building.
+                    </p>
+
+                    <p class="mb-6">
+                        International Rivers (IR) is supporting the Wampis and Awajun indigenous peoples in their efforts to create Autonomous Territorial Governments that will give them self-determination within a State Government. This is challenging, but is what indigenous groups see as a way to protect their rainforests. In the case of the Wampis, this is 11 million hectares or rainforest. IR also supported and is supporting the Wampis on a project to identify the contribution of their rainforest in climate stability.
+                    </p>
+
+                    <p class="mb-6">
+                        They are also working with national groups to create a Healthy and Free Flowing Rivers Law in Peru. The idea is to create a law that permanently and legally protects rivers or sections of river with certain values and attributes, much similar to the Wild and Scenic Rivers Act in the USA. IR is working with a coalition of indigenous groups, NGOs, religious groups, academics, and others to develop this work. IR has supported several studies, one is a social diagnostic aimed to have grassroots voices and support. IR has also supported the development of the principles to guide the writing of the law based on the analysis of water, forest, and indigenous, national laws and policies. They are developing a communications campaign based on scientific studies and local knowledge on the importance of rivers. The campaign will speak of rivers and forests and their strong relationship, as trees are made up of more than 50 percent water and need a steady source of it in order to grow and stay healthy.
+                    </p>
+
+                    <p class="mb-6">
+                        IR's strategy is to work with indigenous peoples to protect their rivers, their self-management systems, and the ecosystems that they sustain. They do so by supporting indigenous communities in developing long-term strategies, systematically collecting data, raising international awareness about the issues at stake in conflicts over rivers and dams, targeting dam builders from Brazil to China, taking up legal cases, and advocating for the permanent legal protection of their rivers.
+                    </p>
+
+                    <p class="mb-6">
+                        In late April 2011, former Peruvian President Alan Garcia declared that the construction of 20 dams on the Maranon River was "in the national interest." Some of the planned dam projects would involve a system of water transfers and irrigation in arid coastal areas. Others are planned to generate electricity to fuel the expansion of mining interests in the Andes, and could be used to export electricity to Brazil.
+                    </p>
+
+                    <p class="mb-6">
+                        Eighteen of these proposed dams would be located in sensitive ecosystems such as cloud forests and equatorial seasonally dry forest areas. These dams would severely impact the unique ecosystems in these areas. The dams would flood the lands of indigenous Awajun and Wampi communities, who depend on the river and forest resources. Many are farmers who cultivate cacao, plantain, corn, peanuts, and manioc. Their agricultural livelihoods along with fishing in the area would be severely impacted by the proposed projects. Communities would be resettled in unproductive lands or in overcrowded urban centers that lack jobs and basic services.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="mb-4">
+                            For further information, please contact Monti Aguirre, Latin America Coordinator, <a href="mailto:monti@internationalrivers.org" class="text-blue-600 hover:text-blue-700 underline">monti@internationalrivers.org</a>
+                        </p>
+                        <p>
+                            Learn more about International Rivers at: <a href="https://www.internationalrivers.org" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://www.internationalrivers.org/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Borneo Project -->
+    <section id="borneo" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">The Borneo Project: Stopping Megadams in Borneo</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        We gave several grants to the Borneo Project to help their quest to stop megadams in the Borneo rainforests in Malaysia. Massive hydroelectric dams in the state of Sarawak are destroying the rainforests and livelihoods of the indigenous people who live there. The Malaysian government is planning on building 12 additional dams.
+                    </p>
+
+                    <p class="mb-6">
+                        Borneo rainforests have among the highest diversity of animals and plants in the world, including the Orangutan, Proboscis Monkey, other monkeys, Loris, beautiful birds, and gorgeous butterflies.
+                    </p>
+
+                    <p class="mb-6">
+                        The Bakun dam put 700 square kilometers of virgin rainforest and prime farmland under water. An estimated 9,000 native residents, mainly from the Kayan/Kenyah indigenous group, were relocated and were forced to pay close to $15,000 for homes, despite being subsistence farmers with no previous participation in the economy of Sarawak.
+                    </p>
+
+                    <p class="mb-6">
+                        The powerful forces promoting the dams - the Malaysian government and giant corporations - made the dams look unstoppable. Yet, against incredible odds, the Borneo Project has turned this issue into a winnable one, and now it appears many or even all of the dams will be stopped. It achieved this through amazingly beautiful and moving, short films that present the threat of the dams, corruption behind them, value and beauty of the Borneo rainforest, horrendous consequences of its destruction, need to preserve it, extinction of animals and plants from the dams, and the horrible fate of the indigenous people if the dams are built. The Borneo Project is also supporting indigenous people in their fight to preserve their rainforest through helping with funding for organizing and protesting against the dams, civil disobedience and blocking access of bulldozers that destroy rainforest to build the dams, educational projects, bringing international awareness to the issue, and campaigning against those are pushing these dams. It works with its allies and partners, particularly SAVE Rivers, the Borneo Resources Institute (BRIMAS), the Alliance of Indigenous Peoples, and Communities' Information and Communication Center (CICOM), all effective organizations working to stop these destructive megadams.
+                    </p>
+
+                    <p class="mb-6">
+                        The Borneo Project is helping indigenous and local peoples establish a peace and environmental park called the The Baram Peace Park, a community initiative designed to protect Sarawak's last islands of primary forest, celebrate local cultures, and develop sustainable livelihoods. The vision is spearheaded by communities in the upper reach of the Baram River in northern Sarawak, who want to stop logging in their ancestral lands and develop alternative income sources.
+                    </p>
+
+                    <p class="mb-6">
+                        The park is currently being negotiated with the Sarawak government, and communities are discussing the scope and character of the park. The park will establish zones with varying degrees of human activities and ecological protection. The communities will decide on a future land use arrangement based on mapping and a series of inter-community discussions. A team of village representatives is monitoring the forest landscape to any report illegal logging.
+                    </p>
+
+                    <p class="mb-6">
+                        In order to reduce their impacts on the forest, several villages are currently developing strategies to improve agricultural techniques. The focus lies on agroforestry and improving efficiency in paddy fields. Alternative sources of income are currently being explored, including eco-tourism. Since 2012, tourists have been visiting the area under the framework of "Picnic with the Penan".
+                    </p>
+
+                    <p class="mb-6">
+                        To improve the drinking water supply and sanitation, water pipes have been built in several villages. Establishment of micro-hydro and solar panels in villages are currently being explored. These renewable energy projects will provide a sustainable and affordable power supply.
+                    </p>
+
+                    <p class="mb-6">
+                        Written histories, traditional dances, and food are being pursued to keep the indigenous cultures alive.
+                    </p>
+
+                    <p class="mb-6">
+                        An ambitious project like the Peace Park calls for solid institutions. Part of the program targets building capacity in local institutions. Currently, all communities are being mobilized through roadshows - tours with presentations and discussions in the villages of the Upper Baram Area.
+                    </p>
+
+                    <p class="mb-6">
+                        The Borneo Project brings international attention and support to community-led efforts to defend forests, sustainable livelihoods, and human rights. It has trained dozens of indigenous activists in community mapping, enabling communities to map areas of ancestral land claims and win legal cases and negotiations. It helps indigenous communities secure legal land rights. The Borneo Project supports communities acting to preserve and conserve local ecosystems. It has supported paralegal education and mobile legal aid clinics that have helped over 200 indigenous communities hold off destructive logging and industrial plantations. It has aided community reforestation, organic gardening, territory demarcation, indigenous education, and other village projects.
+                    </p>
+
+                    <p class="mb-6">
+                        Securing indigenous land rights and mapping indigenous land are among the most effective ways to protect rainforests. In a recent study, the World Resources Institute (WRI) found that in the Amazon regions of Bolivia, Brazil, and Colombia, in territories where indigenous peoples held titles to their lands, deforestation rates were two to three times lower than in areas with similar forests in which such communities did not hold titles to their lands. Forests protected by indigenous communities are associated with lower rates of deforestation. Forests under the control of indigenous communities tend to be healthier, storing more carbon than similar lands without the same protection.
+                    </p>
+
+                    <p class="mb-6">
+                        The Borneo Project connects grassroots movements in Sarawak to global indigenous rights movements, strengthening the ties between communities to influence domestic and international policy. It also educates the American public about the importance of Borneo, indigenous rights, and the role of forests in climate change and biodiversity conservation.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">Contact:</p>
+                        <p class="mb-4">
+                            The Borneo Project<br>
+                            c/o Earth Island Institute<br>
+                            2150 Allston Way, Suite 460<br>
+                            Berkeley, CA 94704<br>
+                            Email: <a href="mailto:info@borneoproject.org" class="text-blue-600 hover:text-blue-700 underline">info@borneoproject.org</a>
+                        </p>
+                        <p>
+                            Learn more about The Borneo Project at: <a href="http://www.borneoproject.org" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">www.borneoproject.org</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- John Parnell -->
+    <section id="parnell" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">John Parnell: The Sapara and the Sarayaku in Ecuadorian Rainforest</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        The latest of more than one grant given to John Parnell was in July, 2020, to help protect the Sarayaku people from the coronavirus.
+                    </p>
+
+                    <p class="mb-6">
+                        We gave a grant to an exceptional individual, John Parnell, who is a very dedicated activist working to help indigenous people of the Ecuador rainforest preserve their rainforest homes. He aids the Sarayaku by training tribal members in skills needed to install solar powered radio communications facilities. In the course of this training, they installed eight solar powered radios in remote communities near Sarayaku. He then helped the newly-trained Sarayaku people install a similar system in the neighboring Sapara indigenous territory. The Sapara, an indigenous nation related to the Sarayaku, have a much larger territory and are more spread out than the Sarayaku, and therefore have a greater need for communications between their remote locales. Radio communication is especially important for indigenous nations to save their rainforests from exploitation because they are spread out over large distances. They need to communicate over long distances to save their rainforest. Radios are essential and often the only effective and practical way to achieve this communication, in order to fight off exploiters and destroyers of their rainforest homes.
+                    </p>
+
+                    <p class="mb-6">
+                        The Sarayaku are under immediate threat from the coronavirus. It is an emergency situation. Radio communication is crucial to fighting the virus and keeping the Sarayaku healthy. It is killing their elders at a higher rate than the other Sarayaku. The elders are the bearers of their cultural memories and traditions. In July, 2020, the World Rainforest Fund gave Mr. Parnell an emergency grant to purchase quality radios for the Saraayaku to help them keep from getting the coronavirus, to receive medical attention if they do get the virus, and to preserve their rainforest. The Sarayaku have few resources to treat the critically ill. Use of radios by their healthcare teams will greatly enhance their ability to provide timely aid and coordinate the logistics of medical evacuation. The radios will also be employed by their police, fire patrols, and border guards. The same radio communications tools that are helping save Sarayaku lives will also aid them in their struggle to preserve their rainforest home.
+                    </p>
+
+                    <p class="mb-6">
+                        We actively and consciously choose projects that we think will lead to much bigger grants with very far-reaching results. Because of this selective choosing of projects we support, our grants are often amplified by other grantors. And this happened in this case in this case in a profound way. John Parnell states, "Amazon Watch wanted to include my Sapara radio proposal in a grant application to the Leonardo di Caprio Foundation, who were offering $14 Million in grants to support native Amazon Communities. They submitted an ambitious proposal that added 2 satellite internet stations and 3 large solar plants, in addition to the 4 high frequency radio sites I was planning. I am convinced that my being nudged by the World Rainforest Fund to shop my proposal around played a large role in obtaining the Di Caprio grant. This has freed up my project budget to help the Sarayaku. I am very grateful to the World Rainforest Fund in helping them to help their Sapara brothers and sisters in protecting their ancestral lands."
+                    </p>
+
+                    <p class="mb-6">
+                        Thus, the Sapara's needs were met. So John used his remaining budget to do some much-needed work in Sarayaku. He replaced a damaged radio in one community and installed new ones in others, while continuing to train the Sarayaku to aid the Sapara. He also continued to support the Sarayaku with spare parts and material to keep their communications infrastructure functioning.
+                    </p>
+
+                    <p class="mb-6">
+                        The Sapara are facing imminent threats from Chinese oil companies that are slated to enter their territory to explore for oil, because the Ecuadorian government offered blocks of land to the Chinese in exchange for lowering their massive debt to China. It is crucial for the Sapara people to be able to communicate their dire situation to the outside world when this occurs. The Sarayaku have been leaders in supporting other native groups in the Ecuadoran Amazon in resistance to this forced resource extraction.
+                    </p>
+
+                    <p class="mb-6">
+                        John Parnell's work is also helping these indigenous tribes with employment, food, education, and economics. He is making their life better, so they can stay in the rainforest, and not need to flee to the cities. This means more indigenous people stay in the rainforest and fight the exploiters, and preserve the rainforest. This is crucial to saving the rainforest, because the number of people defending the rainforest is very important in determining which side wins, the defenders or destroyers of the rainforest.
+                    </p>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="font-semibold mb-2">Contact:</p>
+                        <p>
+                            John Parnell<br>
+                            <a href="mailto:jparnell@igc.org" class="text-blue-600 hover:text-blue-700 underline">jparnell@igc.org</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Council for Cultural and Biological Diversity -->
+    <section id="osa" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Council for Cultural and Biological Diversity</h2>
+
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        The rainforest, one of approximately twenty terrestrial hotspots of biodiversity on earth, is in the Tena upper Napo region, along the Pusuno River Valley. The indigenous people are mainly Quechua people who live in in villages in the area. The World Rainforest Fund likely set the record for the most species of animal and plant saved per donor dollar when we gave a grant of $7,000.00 to the Council for Cultural and Biological Diversity, known as Fundacion OSA in Spanish, to save an unprotected rainforest consisting of 10,000 acres in Ecuador. Scientists from the Missouri Botanical Garden studied this ecosystem, and concluded it has more species per acre than any ecosystem on Earth. It thus has the highest diversity per unit area of any ecosystem on the planet. Species there include monkeys, parrots, bromeliads, butterflies, brightly colored frogs, majestic trees, spectacular vines, and many other spectacular animal and plant species. This high biodiversity is the result of the fact that the low land Amazonian rainforest and the mountainous Andes ecosystems meet and overlap in this area, so that species from both ecosystems occur together here. It also has an unusually high number of endemic species (species found nowhere else on earth). This unprotected rainforest is adjacent to Sumaco/Napo-Galeras National Park.
+                    </p>
+
+                    <p class="mb-6">
+                        The government of Ecuador approved the building of a road up to and into this rainforest. This road would have meant the destruction of the rainforest, because it would have given exploiters access to the forest. They would have been able to easily come and cut trees for lumber, shoot animals, clear land for agriculture, and drill for oil if they chose to. The grant money was used to hire people to inspect the road, which was found to be wider than the Ecuador government had approved. They took photos of this, and showed government officials. The grant also funded the printing of booklets that showed the value of this rainforest, and the terrible consequences to the environment, animal and plant life, and people if the rainforest were destroyed.
+                    </p>
+
+                    <p class="mb-6">
+                        As a result, the government of Ecuador reversed its decision and stopped the road. The rainforest was saved as a result of our grant. Fundacion OSA stated that they had no other source of funding, and would not have been able to stop the road and save the rainforest without our grant. Only half of the grant money of $7,000.00 given by the World Rainforest fund we gave was spent. That means we saved the most biodiverse ecosystem on Earth, a size of 10,000 acres, for only $3,500.00, in US dollars. That is why we believe we set the record for the most species saved per donor dollar in history. The remaining $3,500.00 was used by the Council for Cultural and Biological Diversity for their conservation work on Ecuador's rainforests. The Council for Cultural and Biological Diversity is one of the most effective conservation organizations working to save rainforests, run so ably by the dedicated, effective, knowledgeable conservationist, Jonathan Miller.
+                    </p>
+
+                    <div class="bg-white  p-6 mb-6">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-4">Purpose and Intention</h3>
+                        <ul class="space-y-2">
+                            <li>To support the protection of rainforest and other wilderness and natural areas, through diverse methods and strategies.</li>
+                            <li>To document and rescue vanishing plant lore and create a new ethnobotany that seeks to strengthen the bridge of knowledge transmission among elders and youth.</li>
+                            <li>To protect Indigenous medicinal plant knowledge and support traditional healers.</li>
+                            <li>To assist Indigenous people's communities in their struggle for cultural and territorial autonomy.</li>
+                            <li>To enact programs which encourage the revitalization of an ecologically sound and economically sustainable relationship between people and the forest.</li>
+                            <li>To promote rainforest conservation projects and offer volunteer opportunities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white  p-6 mb-6">
+                        <h3 class="text-xl font-bold text-emerald-900 mb-4">Overview</h3>
+                        <p class="mb-4">
+                            The Council for Cultural and Biological Diversity, in Spanish known as Fundacion OSA, is a collaborative effort among a small group of concerned individuals in Costa Rica, Ecuador, and the United States in the fields of fundraising and proactively endorsing rainforest and wildlife conservation and cultural heritage revitalization projects among Indigenous minorities and rural peoples' communities. The work supports the struggle for cultural and territorial autonomy through land purchase programs and in the past via demarcation and decolonization programs.
+                        </p>
+                        <p class="mb-4">
+                            They have dedicated efforts to cultural heritage rekindling processes that includes participatory ethnobotanical and ethnographical field documentation and publication of this material in bilingual education booklets for local schools. This has also included the preservation of medicinal plant knowledge via workshops and educational council gatherings, as well as the protection of the plants themselves in ethnobotanical gardens, in situ. Their work has always been in collaboration and support of traditional healers and their healing methods.
+                        </p>
+                        <p class="mb-4">
+                            Among indigenous peoples' communities, their approach is holistic and direct in nature aimed at finding creative ways to bridging the gap among the generations in order to collaborate in the efforts of safeguarding the rainforest and the knowledge pertinent for continued sustainable living, healing, and well-being.
+                        </p>
+                        <p class="mb-4">
+                            Their strategy addresses the specific needs of the region in which they work. In the Ecuadorian Amazon, many of the Indigenous groups have obtained legal title to their communally held lands, which collectively amount to hundreds of thousands of acres of primary rainforest. The fact that these forest lands are held communally by Indigenous communities does not mean they are protected. The Indigenous People of the Amazon are faced with tremendous economic pressures at the same time that their traditional cultures are undergoing rapid change that follows modernization.
+                        </p>
+                        <p class="mb-4">
+                            Unsustainable land-use, such as cattle and timber extraction, is rapidly becoming the main economic activity. A crucial, yet often overlooked, link in preserving the forests is the practical knowledge of the uses and value of the forest inherited by the people of the rainforest. This knowledge is, regrettably, disappearing even faster than the forest itself.
+                        </p>
+                        <p>
+                            When forest peoples' communities maintain their plant lore, they also maintain respect for the forest and always have a communally held forest reserve. Thus, Fundacion OSA believes in the importance of promoting cultural revitalization and supporting Indigenous medicinal plant knowledge and healing modalities among indigenous peoples' communities as an effective strategy towards supporting the protection of fragile rainforest ecosystems and the good health off the people themselves.
+                        </p>
+                    </div>
+
+                    <div class="bg-emerald-50  p-6 mt-8">
+                        <p class="mb-4">
+                            To learn about the non-profit work of Fundacion OSA in the Andes and Amazon of Ecuador and on the Osa Peninsula of Costa Rica, visit <a href="https://www.4biodiversity.org" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://www.4biodiversity.org</a> and <a href="https://rainforestconservationprojects.org" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://rainforestconservationprojects.org</a>.
+                        </p>
+                        <p class="font-semibold mb-2">Contact:</p>
+                        <p>
+                            Dahlia K Miller - International Liaison & Outreach Staff<br>
+                            Tel: (510) 235-4313<br>
+                            E-mails: <a href="mailto:dahlia@oceanforest.org" class="text-blue-600 hover:text-blue-700 underline">dahlia@oceanforest.org</a>, <a href="mailto:sparrowsky@gmail.com" class="text-blue-600 hover:text-blue-700 underline">sparrowsky@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Educational articles and resources about rainforest conservation, biodiversity, and environmental issues.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/975415189.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Articles & Resources</h1>
+                <p class="text-xl md:text-2xl">Educational content about rainforest conservation and biodiversity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg max-w-none text-gray-700 mb-12">
+                    <p class="text-xl text-center mb-12">
+                        Explore our collection of articles covering rainforest ecology, conservation strategies, biodiversity, and the critical role of rainforests in global climate regulation.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Study links protecting Indigenous peoples' lands to greater nonhuman primate biodiversity</h2>
+                        <p class="text-gray-700 mb-4">
+                            "By comparing geographic patterns of nonhuman primate biodiversity and human land-use, researchers discovered that areas managed or controlled by Indigenous peoples tend to have significantly more primate biodiversity than nearby regions. They also found that lorises, tarsiers, monkeys and apes whose territories overlap with Indigenous areas are less likely to be classified as vulnerable, threatened or endangered than those living fully outside Indigenous lands." [2] "Given that the ranges of 71% of primate species intersect Indigenous Peoples' lands, we will only avert the mass extinction of primates if we respect and support biocultural diversity and the efforts of Indigenous Peoples to maintain their languages, and cultural and symbolic ties to their lands and waters." [1]
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            [1] <a href="https://www.science.org/doi/10.1126/sciadv.abn2927" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.science.org/doi/10.1126/sciadv.abn2927</a><br>
+                            [2] <a href="https://news.illinois.edu/view/6367/1935866953" target="_blank" class="text-blue-600 hover:text-blue-700 underline">news.illinois.edu/view/6367/1935866953</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Fastest deforestation of Amazon rainforest in Brazil in six years; Amazon reaching a resilience tipping-point</h2>
+                        <p class="text-gray-700 mb-4">
+                            "Deforestation of the Amazon rainforest in Brazil has hit a six-year high, the national space agency, Inpe, reports. Some 3,988 square kilometres (1,540 square miles) of land were cleared in the region between January and June. Last year, 3,088 square kilometres of the rainforest were destroyed during the same period." [1] "We find that more than three-quarters of the Amazon rainforest has been losing resilience since the early 2000s, consistent with the approach to a critical transition. Resilience is being lost faster in regions with less rainfall and in parts of the rainforest that are closer to human activity. We provide direct empirical evidence that the Amazon rainforest is losing resilience, risking dieback with profound implications for biodiversity, carbon storage and climate change at a global scale." [2]
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            [1] <a href="https://www.bbc.co.uk/news/world-latin-america-62103336" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.bbc.co.uk/news/world-latin-america-62103336</a><br>
+                            [2] <a href="https://www.nature.com/articles/s41558-022-01287-8" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.nature.com/articles/s41558-022-01287-8</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Facing Extinction: Nine Steps to Save Biodiversity</h2>
+                        <p class="text-gray-700 mb-4">
+                            "More than 140 species of mammals, 24 birds, 6 reptiles, and 5 amphibians deteriorated in conservation status, moving from lower to higher risk categories of concern on the IUCN Red List of Threatened Species, the global authority on the conservation status of the world's animals and plants. Only 37 mammals improved during this period, along with two birds and one amphibian. Here are nine tactics that could help moderate human-caused extinctions: 1. Biodiversity Parks 2. Ecologically Reclaimed and Restored Habitats 3. The Fabric of Local Communities 4. Diversity in Human Landscapes 5. Legislation 6. Ecological Economics 7. Endowment: Biodiversity Trusts 8. Bioliteracy 9. Toward Zero Extinction"
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the paper at:</strong><br>
+                            <a href="https://thesolutionsjournal.com/2016/02/22/facing-extinction-nine-steps-to-save-biodiversity/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">thesolutionsjournal.com/2016/02/22/facing-extinction-nine-steps-to-save-biodiversity/</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">High exposure of global tree diversity to human pressure</h2>
+                        <p class="text-gray-700 mb-4">
+                            "83% of tree species experience nonnegligible human pressure across their range on average. ... Protecting high-priority areas for the top 17% and 50% priority thresholds would increase the average protected proportion of each tree species' range to 65.5% and 82.6%, respectively, leaving many fewer species (2,151 and 2,010) completely unprotected. The priority areas identified for trees match well to the Global 200 Ecoregions framework, revealing that priority areas for trees would in large part also optimize protection for terrestrial biodiversity overall. Based on range estimates for &gt;46,000 tree species, our findings show that a large proportion of tree species receive limited protection by current PAs and are under substantial human pressure. Improved protection of biodiversity overall would also strongly benefit global tree diversity."
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the paper at:</strong><br>
+                            <a href="https://www.pnas.org/doi/10.1073/pnas.2026733119" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.pnas.org/doi/10.1073/pnas.2026733119</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Amazon rainforest is approaching a tipping point of transitioning to a savannah</h2>
+                        <p class="text-gray-700 mb-4">
+                            "Deforestation and climate change, via increasing dry-season length and drought frequency, may already have pushed the Amazon close to a critical threshold of rainforest dieback. ... We find that more than three-quarters of the Amazon rainforest has been losing resilience since the early 2000s, consistent with the approach to a critical transition. Resilience is being lost faster in regions with less rainfall and in parts of the rainforest that are closer to human activity."
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the paper at:</strong><br>
+                            <a href="https://www.nature.com/articles/s41558-022-01287-8" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.nature.com/articles/s41558-022-01287-8</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Conservation of Earth's biodiversity is embedded in Indigenous fire stewardship</h2>
+                        <p class="text-gray-700 mb-4">
+                            "Indigenous peoples comprise 5% of the world population but protect approximately 85% of its biodiversity through stewardship of indigenous-managed lands. ... Supporting indigenous-led fire stewardship can assist with reviving important cultural practices while protecting human communities from increasingly severe wildfires, enhancing biodiversity, and increasing ecosystem heterogeneity."
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the paper at:</strong><br>
+                            <a href="https://www.pnas.org/content/118/32/e2105073118" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.pnas.org/content/118/32/e2105073118</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">United Nations report concludes indigenous peoples of Latin America are, by far, the most effective guardians of rainforest in the region</h2>
+                        <p class="text-gray-700 mb-4">
+                            This comprehensive UN report provides evidence that Indigenous peoples are the most effective guardians of forests in Latin America, with significantly lower deforestation rates on indigenous lands compared to other areas.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the original report at:</strong><br>
+                            <a href="http://www.fao.org/americas/publicaciones-audio-video/forest-gov-by-indigenous/en/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.fao.org/americas/publicaciones-audio-video/forest-gov-by-indigenous/en/</a><br>
+                            <strong>Read a news article discussing this report at:</strong><br>
+                            <a href="https://www.theguardian.com/environment/2021/mar/25/indigenous-peoples-by-far-the-best-guardians-of-forests-un-report" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.theguardian.com/environment/2021/mar/25/indigenous-peoples-by-far-the-best-guardians-of-forests-un-report</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Wildlife populations have plummeted by two-thirds in 50 years</h2>
+                        <p class="text-gray-700 mb-4">
+                            Natural areas that used to support biodiversity and have been converted for farming are the biggest reason for the population decline of thousands of species around the world. The WWF study has found that the average population size has dropped by 68% worldwide between 1970 and 2016.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read the original article at:</strong><br>
+                            <a href="https://www.weforum.org/agenda/2020/09/wildlife-populations-biodiversity-loss-human-action" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.weforum.org/agenda/2020/09/wildlife-populations-biodiversity-loss-human-action</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">The importance of Indigenous Peoples' lands for the conservation of terrestrial mammals</h2>
+                        <p class="text-gray-700 mb-4">
+                            Research demonstrating the critical role that Indigenous Peoples' lands play in the conservation of terrestrial mammals worldwide, with implications for global conservation strategies.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.13620" target="_blank" class="text-blue-600 hover:text-blue-700 underline">conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.13620</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Council on Foreign Relations: How Brazil's Burning Amazon Threatens the Climate</h2>
+                        <p class="text-gray-700 mb-4">
+                            An analysis of how deforestation and fires in the Amazon rainforest pose a significant threat to global climate stability and what this means for international climate policy.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.cfr.org/in-brief/how-brazils-burning-amazon-threatens-climate" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.cfr.org/in-brief/how-brazils-burning-amazon-threatens-climate</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Nature and Culture International: Unparalleled in scale, complexity, and diversity, the Amazon stabilizes key processes that are vital to life on Earth.</h2>
+                        <p class="text-gray-700 mb-4">
+                            A comprehensive overview of the Amazon's critical role in stabilizing global ecological processes, from climate regulation to biodiversity preservation.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://natureandculture.org/ecosystems/amazon-rainforest/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://natureandculture.org/ecosystems/amazon-rainforest/</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">National Geographic: Rainforest Encyclopedia</h2>
+                        <p class="text-gray-700 mb-4">
+                            National Geographic's comprehensive encyclopedia entry on rainforests, covering their ecology, biodiversity, threats, and importance to global ecosystems.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.nationalgeographic.org/encyclopedia/rain-forest/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.nationalgeographic.org/encyclopedia/rain-forest/</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Mongabay: Amazon Destruction</h2>
+                        <p class="text-gray-700 mb-4">
+                            Detailed coverage of Amazon rainforest destruction, including drivers of deforestation, current rates of loss, and the environmental consequences.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://rainforests.mongabay.com/amazon/amazon_destruction.html" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://rainforests.mongabay.com/amazon/amazon_destruction.html</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Amazon fires: What's the latest in Brazil? Dark clouds of smoke smothered cities in Brazil as parts of the Amazon burned at a rate not seen in years, and the world responded with outrage.</h2>
+                        <p class="text-gray-700 mb-4">
+                            BBC coverage of the devastating fires in the Amazon rainforest, their causes, impacts on local communities, and international response to the crisis.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.bbc.com/news/world-latin-america-49971563" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.bbc.com/news/world-latin-america-49971563</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Scientists and environmental groups 'alarmed' by huge rise in Amazon wildfires</h2>
+                        <p class="text-gray-700 mb-4">
+                            Analysis of the alarming increase in Amazon wildfires, with perspectives from scientists and environmental groups on the causes and consequences of this surge.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.nbcnews.com/news/world/scientists-environmental-groups-alarmed-huge-rise-amazon-wildfires-n1235595" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.nbcnews.com/news/world/scientists-environmental-groups-alarmed-huge-rise-amazon-wildfires-n1235595</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">The World's Rainforests: Tropical and Temperate</h2>
+                        <p class="text-gray-700 mb-4">
+                            A comprehensive guide to both tropical and temperate rainforests around the world, covering their characteristics, biodiversity, and conservation challenges.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.rainforestmaker.org/files/the_worlds_rainforests_tropical_and_temperate.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 underline">www.rainforestmaker.org/files/the_worlds_rainforests_tropical_and_temperate.pdf</a>
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-3">Wide-scale negative impacts of damming rivers in the Amazon basin</h2>
+                        <p class="text-gray-700 mb-4">
+                            Scientific research examining the wide-scale ecological and social impacts of damming rivers throughout the Amazon basin, including effects on fish populations, sediment transport, and indigenous communities.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Read more at:</strong><br>
+                            <a href="https://www.nature.com/articles/nature22333" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://www.nature.com/articles/nature22333</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-16 bg-emerald-50  p-8 text-center">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-4">Want More Information?</h2>
+                    <p class="text-gray-700 mb-6">
+                        Explore our comprehensive guide to rainforests or check out recommended books and resources.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="all-about-rainforests.html" class="inline-block bg-emerald-600 text-white px-8 py-3  font-semibold hover:bg-emerald-700 transition">
+                            All About Rainforests
+                        </a>
+                        <a href="books.html" class="inline-block border-2 border-emerald-600 text-blue-600 px-8 py-3  font-semibold hover:bg-emerald-50 transition">
+                            Recommended Books
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Support rainforest conservation. Your tax-deductible donation helps preserve biodiversity and protect indigenous communities.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/38792488.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Support Our Mission</h1>
+                <p class="text-xl md:text-2xl">Your donation helps preserve the world's rainforests and protect indigenous communities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Information -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <!-- Impact Statement -->
+                <div class="bg-emerald-50  p-8 md:p-12 mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6 text-center">Your Impact</h2>
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2">100%</div>
+                            <p class="text-gray-700">of your donation goes directly to rainforest conservation</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2">40+</div>
+                            <p class="text-gray-700">years of conservation work since 1984</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2">64 Million</div>
+                            <p class="text-gray-700">acres of rainforest protected</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How to Donate -->
+                <div class="bg-white shadow-lg p-8 md:p-12 mb-12">
+                    <h2 class="text-3xl font-bold text-center mb-8">How to Donate</h2>
+
+                    <div class="prose prose-lg max-w-none text-gray-700 mb-8">
+                        <p><strong>We accept both donations by check and via Paypal. We prefer check because Paypal charges a few percent processing fee.</strong></p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <!-- Check -->
+                        <div class="border-l-4 border-emerald-600 pl-6">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">By Check (Preferred)</h3>
+                            <p class="text-gray-700 mb-4">
+                                Please make your check out to <strong>World Rainforest Fund</strong>, and mail it to:
+                            </p>
+                            <div class="bg-gray-50 rounded p-6 text-gray-700">
+                                <p class="font-semibold">World Rainforest Fund</p>
+                                <p>1888 Pomar Way</p>
+                                <p>Walnut Creek, California 94598-1424</p>
+                            </div>
+                            <p class="text-gray-700 mt-4">
+                                We will send you a thank you email, which you can use for purposes of a tax deduction.
+                            </p>
+                            <p class="text-gray-700 mt-2">
+                                If you send us a check by mail, please be sure to include a note with your email address, so we can save trees and expenses by emailing you your tax-deduction thank you letter. We will not send you newsletters or constant appeals for funds. We are not a membership organization, and we believe in spending your money on saving rainforest, not a large number of mailings to you.
+                            </p>
+                        </div>
+
+                        <!-- PayPal -->
+                        <div class="border-l-4 border-emerald-600 pl-6">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">Donate via PayPal</h3>
+                            <p class="text-gray-700 mb-4">
+                                To donate via Paypal please click this Paypal Donate button:
+                            </p>
+                            <div class="text-center">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick" />
+                                    <input type="hidden" name="hosted_button_id" value="LM3FN8PVV3M5L" />
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Stock Donations -->
+                        <div class="border-l-4 border-emerald-600 pl-6">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">Appreciated Stock</h3>
+                            <p class="text-gray-700 mb-4">
+                                Donating appreciated stock can provide significant tax benefits. Contact us for transfer instructions:
+                            </p>
+                            <a href="mailto:action@worldrainforest.org" class="text-blue-600 hover:text-blue-700 font-semibold underline">
+                                action@worldrainforest.org
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Your Donation Matters -->
+                <div class="bg-white shadow-lg p-8 md:p-12 mb-12">
+                    <h2 class="text-3xl font-bold text-center mb-8">Why Your Donation Matters</h2>
+
+                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                        <p>The Earth is undergoing a mass extinction crisis caused by humans, and the leading cause of this extinction crisis is habitat destruction. The World Rainforest Fund works to stop this loss of biodiversity by preventing habitat destruction. We lose huge numbers of species each year. Species are going extinct at a rate that is 100 to 1,000 times greater than the normal background extinction rate (1). The renowned evolutionary biologist, Dr. Edward O. Wilson, said in 2002 that if current extinction rates continue, one half of all species on earth will be extinct in 100 years (2). Biodiversity is crucial to human welfare. Many of our medicines and industrial chemicals come from living organisms. Life stabilizes local and global climate. It holds the soil in place, preventing erosion. It is the source of our food supply. It is a source of beauty, spiritual rejuvenation, tourism, and scientific knowledge. And life has a right to exist for its own sake—we have a moral obligation not to destroy species.</p>
+
+                        <p>We save biodiversity in ecosystems that have the vast majority of it. Rainforests are home to half the land species on earth. They are a major source of biodiversity. They have more species of animals and plants than any other terrestrial ecosystem on earth. Tropical rainforests are being destroyed at the rate of 300 acres per minute worldwide. This is equivalent to the loss of an area half the size of the state of California annually.</p>
+
+                        <p>We preserve rainforests where they are most abundant in a continuous area, and where the preservation of them will last with the highest probability. We save rainforests in the Amazon Basin. The largest area of intact rainforest is the Amazon Basin. We sometimes have projects to save rainforests in other countries, but we focus on Brazil. The country with most rainforest is Brazil. Saving the area on earth with the most continuous rainforest will have the longest lasting effect. It is especially effective because this strategy saves the most corridors connecting areas where species live. Animals need corridors to keep their genetic diversity high enough to allow their survival. Without corridors, animal populations get isolated and undergo inbreeding, which can drive the species extinct due to lack of genetic variability.</p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8 mb-4">References</h3>
+
+                        <p>1. Nepstad, D., Schwartzman, S., Bamberger, B., Santilli, M., Ray, D., Schelsinger, P., Lefebvre, P., Alencar, A., Prinz, E., Fiske, G., and Rolla, A. (February, 2006). Inhibition of Amazon Deforestation and Fire by Parks and Indigenous Lands. Conservation Biology, Volume 20, Number 1: 65-73.</p>
+
+                        <p>2. Porter-Bolland, L., Ellis, E. A., Guariguata, M. A., Ruiz-Mallén, I., Negrete-Yankelevich, S., Reyes-García, V. (2011). Community managed forests and forest protected areas: An assessment of their conservation effectiveness across the tropics. Forest Ecology and Management. doi:10.1016/j.foreco.2011.05.034.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

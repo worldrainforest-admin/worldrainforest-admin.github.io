@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Recommended books about rainforests, conservation, and biodiversity.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/975415189.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Books & Publications</h1>
+                <p class="text-xl md:text-2xl">Recommended reading about rainforests and conservation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-xl text-gray-700 text-center mb-12">
+                    Deepen your understanding of rainforest ecosystems and conservation with these recommended books by leading experts and researchers.
+                </p>
+
+                <!-- Rainforests and Their Conservation -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-8">Rainforests and Their Conservation</h2>
+                    <div class="space-y-6">
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Tropical Nature</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Adrian Forsyth & Ken Miyata</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Charles Scribner's Sons, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 684 17964 4 (Hardcover) | ISBN 0 684 18710 8 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Life Above the Jungle Floor</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Donald Perry</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Simon & Schuster, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 671 54454 3 (Hardcover) | ISBN 0 671 64426 2 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">In the Rainforest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Catherine Caufield</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Univ. of Chicago Press, Chicago</p>
+                            <p class="text-sm text-gray-600">ISBN 0 226 09786 2 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Portraits of the Rain Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Adrian Forsyth</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Camden House, Ontario</p>
+                            <p class="text-sm text-gray-600">ISBN 0 921820 13 5 (Hardcover)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Last Rain Forests</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Mark Collins</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Oxford Univ. Press, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 19 520836 6 (Hardcover)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">A Neotropical Companion</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> John C. Kricher</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Princeton Univ. Press, New Jersey</p>
+                            <p class="text-sm text-gray-600">ISBN 0 691 08520 X (Acetate Pb) | ISBN 0 691 08521 8 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Rain Forest Book</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Scott Lewis</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Living Planet Press, California</p>
+                            <p class="text-sm text-gray-600">ISBN 0 9626072 1 5 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Lessons of the Rain Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Suzanne Head & Robert Heinzman</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Sierra Club, San Francisco</p>
+                            <p class="text-sm text-gray-600">ISBN 0 87156 678 8 (Hardcover) | 0 87156 682 6 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Fate of the Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Susanna Hecht & Alexander Cockburn</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Harper Collins, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 06 097322 6 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Trees of Life</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Kenton Miller & Laura Tangley</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Beacon Press, Boston</p>
+                            <p class="text-sm text-gray-600">ISBN 0 8070 8508 1 (Hardcover) | 0 8070 8505 7 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Into the Amazon</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Augusta Dwyer</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Sierra Club, San Francisco</p>
+                            <p class="text-sm text-gray-600">ISBN 0 87156 637 0 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Tropical Rain Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Marius Jacobs</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Springer-Verlag, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 3 540 17996 8 | 0 387 17996 8</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Gorillas In the Mist</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Dian Fossey</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Houghton Mifflin, Boston</p>
+                            <p class="text-sm text-gray-600">ISBN 0 395 28217 9 (Hardcover) | 0 395 36638 0 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Amazonia</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Ghillean Prance & Thomas Lovejoy</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Pergamon Press, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 08 030776 0 (Hardcover)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Conversion of Tropical Moist Forests</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Norman Myers</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> National Academy of Sciences, Washington</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-emerald-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Amazon Jungle: Green Hell to Red Desert?</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> R.J.A. Goodland & H.S. Irwin</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Elsevier Scientific Publishing, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 444 41318 9 (Hardcover)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Rainforest Adventure -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-8">Rainforest Adventure</h2>
+                    <div class="space-y-6">
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">In Trouble Again</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Redmund O'Hanlon</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Vintage Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 679 72714 0 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Into the Heart of Borneo</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Redmond O'Hanlon</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Vintage Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 394 75540 5 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Rivers Amazon</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Alex Shoumatoff</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Sierra Club, San Francisco</p>
+                            <p class="text-sm text-gray-600">ISBN 0 87156 771 7 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">In Southern Light</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Alex Shoumatoff</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Vintage Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 679 73077 X (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Naturalist on the River Amazons</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Henry Walter Bates</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Penguin Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 14 017011 1 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Who Goes Out in the Mid-Day Sun?</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Benedict Allen</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Viking Press, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 670 81032 0 (Hardcover)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Running the Amazon</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Joe Kane</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Vintage Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 679 72902 X (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Stranger in the Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Eric Hansen</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Penguin Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 14 009586 1 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Cloud Forest</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Peter Matthiessen</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Penguin Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 14 009549 7 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Jaguars Ripped My Flesh</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Tim Cahill</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Bantam Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 553 34276 2 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-blue-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Farm on the River of Emeralds</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Moritz Thomsen</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Vintage Books, New York</p>
+                            <p class="text-sm text-gray-600">ISBN 0 394 75994 X (Paperback)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Environmental Issues -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-8">Environmental Issues and the Fate of Earth and its Species</h2>
+                    <div class="space-y-6">
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Diversity of Life</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> E. O. Wilson</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> The Belknap Press of Harvard University, Cambridge, MA (1992)</p>
+                            <p class="text-sm text-gray-600">ISBN 0 674 21298 3</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">BioDiversity</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> E.O. Wilson</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> National Academy Press, Washington D.C. (1988)</p>
+                            <p class="text-sm text-gray-600">ISBN 0 309 03783 2 (Hardcover) | 0 309 03739 5 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Sixth Extinction: An Unnatural History</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Elizabeth Kolbert</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Henry Holt and Company, New York, NY (2014)</p>
+                            <p class="text-sm text-gray-600">ISBN 978 0 8050 9299 8</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">eaarth</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Bill McKibben</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Times Books, Henry Holt and Company (2010)</p>
+                            <p class="text-sm text-gray-600">ISBN 978 0 8050 9056 7</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-red-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Extinction: The Causes and Consequences of the Disappearance of Species</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Paul and Anne Ehrlich</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Random house, New York, NY (1981)</p>
+                            <p class="text-sm text-gray-600">ISBN 0 394 51312 6</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Indigenous People -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-8">Indigenous People</h2>
+                    <div class="space-y-6">
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-purple-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Indigenous Peoples - A Global Quest For Justice</h3>
+                            <p class="text-gray-700 mb-2"><strong>Authors:</strong> Sadruddin Agakhan & Hassan bin Talal</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Zen Books Ltd., New Jersey</p>
+                            <p class="text-sm text-gray-600">ISBN 0 86232 758 (Hardcover) | 0 86232 759 8 (Paperback)</p>
+                        </div>
+
+                        <div class="bg-white shadow-md p-6 rounded-lg border-l-4 border-purple-600">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">The Indigenous Voice - Visions and Realities</h3>
+                            <p class="text-gray-700 mb-2"><strong>Author:</strong> Roger Moody</p>
+                            <p class="text-gray-700 mb-2"><strong>Publisher:</strong> Zen Books Ltd., New Jersey</p>
+                            <p class="text-sm text-gray-600">ISBN 0 86232 305 3 (Hardcover) | 0 86232 306 1 (Paperback)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-emerald-50  p-8 text-center">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-4">Continue Learning</h2>
+                    <p class="text-gray-700 mb-6">
+                        Explore more resources about rainforest conservation and ecology.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="articles.html" class="inline-block bg-emerald-600 text-white px-8 py-3  font-semibold hover:bg-emerald-700 transition">
+                            Read Articles
+                        </a>
+                        <a href="videos.html" class="inline-block border-2 border-emerald-600 text-blue-600 px-8 py-3  font-semibold hover:bg-emerald-50 transition">
+                            Watch Videos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

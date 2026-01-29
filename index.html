@@ -1,9 +1,356 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Rainforest Fund - Preserving Biodiversity Since 1984</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="World Rainforest Fund - Non-profit organization dedicated to preserving biodiversity and saving rainforests worldwide through grants and education.">
+    <meta name="keywords" content="rainforest, conservation, biodiversity, indigenous people, climate change, environmental preservation">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
 
-<h1>World Rainforest Fund</h1>
-<p>This is a test of the new World Rainforest Fund website on github pages</p>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-24 md:py-32" style="background-image: url('static/images/background-images/background-images/837017058.gif'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Every year, rainforest equal to half of California is permanently lost
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                    The World Rainforest Fund is a non-profit organization founded in 1984, dedicated to preserving biodiversity and saving rainforests worldwide. We empower indigenous people to save their rainforest homes by giving grants to worthy organizations and through public education.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="contact.html" class="inline-block border-2 border-white text-white px-8 py-4  font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Join Our Mailing List
+                    </a>
+                    <a href="donate.html" class="inline-block border-2 border-white bg-emerald-600 text-white px-8 py-4  font-semibold text-lg hover:bg-emerald-700 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                    <strong>In this time-lapse satellite imagery of the Rodinia region of the Amazon in Brazil, yellow-outlined areas have been successfully protected over time from deforestation by local and indigenous people of the rainforest. Areas outside of the yellow outlines were not protected by local and indigenous people.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-12" style="background-color: #dc2626;">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #ffffff;">Get involved! Email us at:</h2>
+            <a href="mailto:action@worldrainforest.org" class="text-2xl md:text-3xl font-semibold underline" style="color: #ffffff;">
+                action@worldrainforest.org
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Preserve Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-8">Why should we preserve rainforest?</h2>
+                <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        Rainforests are Earth's most biodiverse ecosystems, containing half of all species on the planet, and their preservation is critical for multiple interconnected reasons. They serve as massive carbon sinks that help regulate climate by absorbing CO₂ through photosynthesis, but when destroyed, they release stored carbon and contribute approximately 17% of global emissions, creating a dangerous feedback loop with climate change.
+                    </p>
+                    <p class="mb-6">
+                        These forests regulate both global and local water cycles, with their destruction causing droughts and floods far beyond their borders, including reduced rainfall in regions like the U.S. Midwest and water shortages in cities like São Paulo. Rainforests are the source of many essential foods, medicines (including 70% of cancer-fighting drugs), and everyday products we use, while also harboring millions of undiscovered species that could provide future medical and agricultural breakthroughs.
+                    </p>
+                    <p class="mb-6">
+                        They are home to indigenous peoples whose traditional knowledge about medicinal plants rivals that of university botanists, and who serve as natural forest protectors. The economic value of rainforest biodiversity alone is estimated at 2-5 trillion dollars annually, yet current destruction rates threaten to eliminate over three-quarters of unknown species before they can even be discovered.
+                    </p>
+                    <div class="text-center mt-8">
+                        <a href="all-about-rainforests.html" class="inline-block text-blue-600 hover:text-blue-700 font-semibold text-lg underline">
+                            Learn more about why we should preserve rainforest →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rapid Loss Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-6">How rapid is rainforest loss?</h2>
+                        <div class="text-gray-700 leading-relaxed space-y-4">
+                            <p>
+                                Globally, rainforests are being destroyed at the rate of about <strong>5 acres every second</strong>, or 300 acres per minute. We are losing over 80,000 acres, and significantly degrading another 80,000 acres, of tropical rainforest every day.
+                            </p>
+                            <p>
+                                Every year, the area of rainforests destroyed is equal to <strong>one half the size of the state of California</strong>. The destruction of rainforests alone is causing the extinction of <strong>135 plant and animal species every day</strong>, which is almost 50,000 species a year!
+                            </p>
+                            <p>
+                                According to the United Nations' Food and Agriculture Organization, overall tropical deforestation rates this decade are 8.5 percent higher than during the 1990s. If the destruction is not stopped, rainforests will cease to exist except in a few protected areas within 60 years.
+                            </p>
+                            <div class="mt-6">
+                                <a href="all-about-rainforests.html#rate" class="inline-block text-blue-600 hover:text-blue-700 font-semibold underline">
+                                    Learn more about how rapidly we lose rainforest →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="static/images/cld09021322_11.jpg" alt="Rainforest canopy" class="shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Destruction Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <img src="static/images/chien-monkeys_orig.png" alt="Maroon Langur monkeys in rainforest" class="shadow-lg w-full">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl md:text-5xl font-bold mb-6">Why are people destroying rainforest?</h2>
+                        <div class="text-gray-700 leading-relaxed space-y-4">
+                            <p>
+                                Both local residents of the rainforest and large corporations destroy the rainforest for economic development such as to extract resources including wood, oil, and minerals, to clear way for farmland, and to generate electricity from very large dams.
+                            </p>
+                            <p>
+                                But the methods employed by these groups are frequently economically short-sighted because structures built in the rainforest deteriorate unusually rapidly due to acidic corrosion from the rotting dead trees, and also because important sources of water become polluted and unusable.
+                            </p>
+                            <p>
+                                Climate change, which we are all contributing to, is playing a key role in rainforest loss, as it causes droughts by reducing the capability of air to retain moisture.
+                            </p>
+                            <div class="mt-6">
+                                <a href="all-about-rainforests.html#motive" class="inline-block text-blue-600 hover:text-blue-700 font-semibold underline">
+                                    Learn more about why people are motivated to destroy the rainforest →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Value Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">Why should I be concerned about the rainforest economically?</h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white  shadow-lg overflow-hidden">
+                        <div class="w-full h-96">
+                            <img src="static/images/medicinalplants.jpeg" alt="Medicinal Plants" class="w-full h-full object-contain">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3 text-emerald-900">Medicines</h3>
+                            <p class="text-gray-700">More than one fourth of the medicines we use today have their origins in rainforests, and only 1% of rainforest plants have been studied for their medicinal properties.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white  shadow-lg overflow-hidden">
+                        <div class="w-full h-96">
+                            <img src="static/images/foods.jpeg" alt="Foods from Rainforest" class="w-full h-full object-contain">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3 text-emerald-900">Foods</h3>
+                            <p class="text-gray-700">Coffee, chocolate, bananas, avocados, mangos, Brazil nuts, cashews, coconuts, rice, corn, and many more foods originated in the rainforest.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white  shadow-lg overflow-hidden">
+                        <div class="w-full h-96">
+                            <img src="static/images/spices.jpeg" alt="Spices from Rainforest" class="w-full h-full object-contain">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3 text-emerald-900">Spices</h3>
+                            <p class="text-gray-700">Black pepper, cinnamon, cloves, vanilla, ginger, turmeric, cardamom, and numerous other spices all originated in rainforests.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="prose prose-lg text-gray-700 leading-relaxed">
+                        <p>
+                            Rainforests are home to half of the Earth's plant and animal species. We are far from finished discovering useful and valuable species in the rainforest, therefore preserving rainforest is a smart economic move.
+                        </p>
+                        <div class="mt-6">
+                            <a href="all-about-rainforests.html#economy" class="inline-block text-blue-600 hover:text-blue-700 font-semibold text-lg underline">
+                                Learn more about economically valuable species from the rainforest →
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="static/images/treroot-cropped_orig.png" alt="Rainforest tree roots" class="shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Help Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="static/images/cld1617545_orig.jpg" alt="Parson's Chameleon in Madagascar rainforest" class="shadow-lg w-full">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-6">How can the World Rainforest Fund help?</h2>
+                        <div class="text-gray-700 leading-relaxed space-y-4">
+                            <p>
+                                The World Rainforest Fund provides grants to worthy, qualified non-profit organizations doing projects of special value to conserve rainforests.
+                            </p>
+                            <p>
+                                <a href="projects-and-grants.html" class="text-blue-600 hover:text-blue-700 font-semibold underline">Read more about our projects and grants →</a>
+                            </p>
+                            <p>
+                                Our advisory board is highly qualified and experienced in rainforest preservation and the operation of nonprofits.
+                            </p>
+                            <p>
+                                <a href="advisory-board.html" class="text-blue-600 hover:text-blue-700 font-semibold underline">View our advisory board →</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">Meet Our Team</h2>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                <div class="bg-white  shadow-lg overflow-hidden text-center">
+                    <img src="static/images/dseaborg-278_orig.jpg" alt="David Seaborg" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">DAVID SEABORG</h3>
+                        <p class="text-gray-900 font-semibold mb-4">President and Founder</p>
+                        <a href="biographies.html" class="text-blue-600 hover:text-blue-700 font-semibold underline">
+                            David Seaborg's Biography →
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white  shadow-lg overflow-hidden text-center">
+                    <img src="static/images/steve-garan-final_orig.png" alt="Steve Garan" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">STEVE GARAN</h3>
+                        <p class="text-gray-900 font-semibold mb-4">Secretary</p>
+                        <a href="biographies.html#steve_garan" class="text-blue-600 hover:text-blue-700 font-semibold underline">
+                            Steve Garan's Biography →
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white  shadow-lg overflow-hidden text-center">
+                    <img src="static/images/peter-eggleton_orig.png" alt="Peter Eggleton" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">PETER EGGLETON</h3>
+                        <p class="text-gray-900 font-semibold mb-4">Treasurer</p>
+                        <a href="biographies.html#peter_eggleton" class="text-blue-600 hover:text-blue-700 font-semibold underline">
+                            Peter Eggleton's Biography →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-emerald-600 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to take action?</h2>
+            <a href="mailto:action@worldrainforest.org" class="text-2xl md:text-3xl text-white hover:text-blue-100 font-semibold underline">
+                action@worldrainforest.org
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

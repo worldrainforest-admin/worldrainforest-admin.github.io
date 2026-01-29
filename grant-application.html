@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Information about applying for grants from the World Rainforest Fund for rainforest conservation projects.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/975415189.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Grant Application</h1>
+                <p class="text-xl md:text-2xl">Apply for funding to support rainforest conservation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Introduction -->
+                <div class="bg-white shadow-lg p-8 rounded-lg mb-8">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-6">World Rainforest Fund Grant Application</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        The World Rainforest Fund (WRF) has established the following criteria in response to a number of requests for grants from us. The criteria are listed in the following grant application, which must be completed to receive a grant from WRF. The application has sixteen items to complete. Please read the application carefully. All items must be completed and all criteria must be met to receive a grant. If your organization does not meet all the criteria, we suggest you do not apply until you have taken the necessary action to have met them all. These criteria are also provided to show our donors how conscientious, selective, careful, and strict we are in selecting grantees, to assure the dollars of our supporters are used to maximal effectiveness.
+                    </p>
+                </div>
+
+                <!-- 16 Point Application Criteria -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-8">Grant Application and Criteria</h2>
+
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">1.</strong> Date (day, month, and year).</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">2.</strong> State, in the order listed here, the name of the organization or individual applying for the grant (henceforth, the organization), physical and mailing address(es), the organization's relevant contact person (or people) for this grant, and his or her (or their) phone number(s) and email address(es). Specify if the phone number is a cell phone, home phone, office phone, or any other type of phone number. If another organization is representing the organization for this application, state that this is the case and give the same information for the organization doing the representing.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">3.</strong> Amount of money the organization is applying for. WRF may approve the application for less than this amount.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">4.</strong> List a total of at least three responsible, established, well-known, reputable individuals and/or environmental organizations, or a combination of such individuals and organizations, that know of the applying organization's work, effectiveness, integrity, and so on. It is best but not required that we know personally or at least have heard of the individual(s) or organization(s) listed. Examples of organizations that we know well and consider credible include the Rainforest Action Network, Rainforest Foundation US, Amazon Watch, and the Pachamama Alliance.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">5.</strong> Show proof that the organization is legal, and has tax-exempt status at the federal level, in the country in which it is working. If it does not have legal and tax-exempt status at the federal level, show that it is working closely with a federally tax-exempt organization recognized by the US government that will represent it for this application and grant, show convincing evidence that it is legitimate and credible, and show a good reason why it is not recognized in its country as legal and federally tax-exempt.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">6.</strong> Present convincing evidence that he organization works to save or restore tropical rainforest, wet forest, moist forest, cloud forest, or dry forest. Preservation takes precedence over restoration. Rainforests have the highest priority because they generally have the highest biodiversity. Dry forests have the lowest priority because their biodiversity, although high, is generally lower than the other tropical forests.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">7.</strong> Show convincing evidence that the organization accomplishes its tropical forest preservation work by empowering indigenous and/or local people who live in or near the forest the organization is attempting to preserve. It is better if they live in the forest than near it.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">8.</strong> Submit a brief, detailed plan of how the grant money will be used by the organization. Two paragraphs is usually sufficient. It must be very specific, describing the project, how it will save tropical forest, how it will help the indigenous or local people involved, an estimate of how many acres of tropical forest will be saved if practical, and any other pertinent information.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">9.</strong> Submit a video showing the problem the project will help solve and how this will be accomplished. This video should be of sufficiently high quality for the WRF to use for fundraising purposes. This requirement can be waived if the organization convinces the WRF Board that this is unrealistically difficult.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">10.</strong> Show that the organization has a matching grant, or, less desirable, a credible chance and plan to obtain one, from another organization that increases and leverages the money we donate. Doubling the grant we give with a matching grant is typical and generally the minimum, or at least a good goal. The larger the matching funds, the better the chance of approval of the application. The grant from the WRF must help the organization raise the money of the matching grant for this criterion to be met. We are willing to help conceive, advise on, and even implement this plan in many cases. An example of this would be a fundraising campaign on a crowdfunding site, such as Indiegogo or Gofundme. We consult and advise on crowdfunding campaigns, and have been successful at helping organizations with this in the past. Other examples would be a fundraising campaign on Facebook or phoning a list of potential donors. The plan of action to leverage our grant must not consist of actions the recipient organization was planning to do regardless of whether they applied for a grant from us. Rather, it must be inspired by the fact that they are seeking our funds.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">11.</strong> Demonstrate that the tropical forest the organization is working to preserve has high biodiversity, which mainly means a high number of species of animals and plants. The higher the biodiversity, the better the chance of a positive decision from us.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">12.</strong> Show that the chance of success of the project and goals of the organization are significantly increased if it receives a grant from the WRF. We do not favor projects that would probably fail or succeed whether or not they receive a grant from us. We favor projects that would likely fail without our grant and succeed with it.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">13.</strong> Demonstrate that the organization can accomplish its goals or be substantially aided with a small grant. We are a small organization and deal with small amounts of money. If the organization seeking help has a project that requires large sums of money to achieve success and will not be significantly helped by a small grant from us, it is best they apply elsewhere. Typical grants from the WRF are $5,000.00 to $10,000.00.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">14.</strong> State the name, phone number, and/or email of a prominent representative of the organization who is very familiar with and involved with the project and willing to be interviewed by at least one member of the WRF Board of Directors concerning the project and grant. The interviewer must give a favorable report of this interview to the WRF Board of Directors.</p>
+                        </div>
+
+                        <div class="pb-6 border-b border-gray-200">
+                            <p><strong class="text-emerald-900">15.</strong> Provide the organization's most current annual independently audited financial statement. This requirement can be waived in rare cases where this is determined to be impractical for legitimate reasons by the WRF Board of Directors. If the organization has another organization representing it in the USA, provide this representing organization's most current independently audited financial statement, and its most current 990 form. The latter is the form that must be presented in accordance with IRS regulations. This requirement may be met by providing an internet link to this form or these forms.</p>
+                        </div>
+
+                        <div class="pb-6">
+                            <p><strong class="text-emerald-900">16.</strong> The organization must agree to file, and file, periodic progress reports when we ask for them, reporting progress on the phone or by email, giving a written report when the project is completed, supplying evidence of their accomplishments, and any other relevant form of accountability to us. No more grants will be given until an adequate report is filed. The WRF Board may withhold 10% of the grant until after the first report is filed if it chooses to do so. List the organization's contact person or contact people that is (are) responsible for this report (these reports). This person (these people) must be responsive, available, and easy to access, to discuss the project we are supporting and its progress and accomplishments. Typically, one progress report six months after the grant is awarded and another one year after it is awarded are what are necessary and sufficient to meet this requirement, but this may not always be the case. The organization must be honest, hard-working, effective, knowledgeable, experienced, and accountable.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-16 grid md:grid-cols-2 gap-8">
+                    <!-- Questions About Applying -->
+                    <div class="bg-gray-100 p-8 text-center">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900">Questions About Applying?</h2>
+                        <p class="text-lg mb-6 text-gray-900">
+                            Contact us for more information about our grant program and application process.
+                        </p>
+                        <p class="text-lg text-gray-900">
+                            Email us at <a href="mailto:action@worldrainforest.org" class="text-blue-600 hover:text-blue-700 font-semibold underline">action@worldrainforest.org</a>
+                        </p>
+                    </div>
+
+                    <!-- View Our Funded Projects -->
+                    <div class="bg-gray-100 p-8 text-center">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">View Our Funded Projects</h2>
+                        <p class="text-lg text-gray-900 mb-6">
+                            See examples of the types of projects we support and their conservation impact.
+                        </p>
+                        <a href="projects-and-grants.html" class="inline-block bg-white border-2 border-gray-300 text-gray-900 px-8 py-3 font-semibold hover:bg-gray-50 transition">
+                            View Projects & Grant Recipients
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

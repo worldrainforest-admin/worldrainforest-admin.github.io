@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Rainforests - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Learn about rainforest ecosystems, biodiversity, threats, and why preservation is critical for the planet.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/1697582848.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">All About Rainforests</h1>
+                <p class="text-xl md:text-2xl">Understanding the importance, threats, and preservation of Earth's most biodiverse ecosystems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <nav class="bg-white  shadow p-6">
+                    <h2 class="text-xl font-bold text-emerald-900 mb-4">Contents</h2>
+                    <ul class="grid md:grid-cols-2 gap-3">
+                        <li><a href="#why-preserve" class="text-blue-600 hover:text-blue-700 underline">Why Preserve Rainforests?</a></li>
+                        <li><a href="#rate" class="text-blue-600 hover:text-blue-700 underline">Rate of Loss</a></li>
+                        <li><a href="#motive" class="text-blue-600 hover:text-blue-700 underline">Motives for Destruction</a></li>
+                        <li><a href="#economy" class="text-blue-600 hover:text-blue-700 underline">Economic Value</a></li>
+                        <li><a href="#biodiversity" class="text-blue-600 hover:text-blue-700 underline">Biodiversity</a></li>
+                        <li><a href="#indigenous" class="text-blue-600 hover:text-blue-700 underline">Indigenous People</a></li>
+                        <li><a href="#help" class="text-blue-600 hover:text-blue-700 underline">How You Can Help</a></li>
+                        <li><a href="#references" class="text-blue-600 hover:text-blue-700 underline">References</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Why Preserve -->
+                <div id="why-preserve" class="mb-16 bg-gray-50 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Why Should We Preserve Rainforests?</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            Rainforests are Earth's most biodiverse ecosystems, containing half of all species on the planet, and their preservation is critical for multiple interconnected reasons that affect every person on Earth.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Rainforests Alleviate Human-Induced Climate Change</h3>
+                        <p>
+                            Trees carry out photosynthesis, which produces oxygen and removes carbon dioxide, the main greenhouse gas, from the atmosphere. But when they are cut or burned, trees can no longer perform photosynthesis, so cannot remove carbon dioxide from the air. Instead, burning or dead and decaying trees release the carbon dioxide stored in their trunks into the atmosphere, exacerbating the greenhouse effect.
+                        </p>
+                        <p>
+                            Rainforests are often destroyed by flooding from huge megadams. In this case, the trees decay under water in the absence of oxygen, which means they release methane instead of carbon dioxide. This is much worse for Earth's climate, because <strong>methane is 25 times as powerful a greenhouse gas as carbon dioxide</strong>. Thus, destroying rainforests makes human-induced climate much worse, heating the Earth.
+                        </p>
+                        <p class="font-semibold text-red-900">
+                            Destruction of tropical rainforests accounts for about 17% of global carbon emissions! The climate crisis cannot be solved without stopping the destruction of rainforests.
+                        </p>
+                        <p>
+                            Without a solution to the crisis of human-induced climatic disruption, there will be a tremendous catastrophe greater than humankind has ever experienced, with crop failures and mass starvation, unprecedented shortages of drinkable water, global pandemics, coastlines going under water, record high temperatures, huge droughts and floods, and many other catastrophes.
+                        </p>
+
+                        <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600 my-6">
+                            <h4 class="text-lg font-bold text-orange-900 mb-3">The Vicious Cycle of Climate Change and Rainforest Destruction</h4>
+                            <p class="text-gray-800 mb-3">
+                                Human-induced climate change is rapidly destroying rainforests worldwide. The increased heat from greenhouse gasses causes droughts in rainforests. Hotter air can hold more moisture without dropping it as rain than colder air can. So the warmer air over the forest does not lose its water as rain, but moves away from the equator, and drops rain in temperate regions. Thus, rainforests are experiencing droughts all over the Earth.
+                            </p>
+                            <p class="text-gray-800 mb-3">
+                                When rainforests are dry from droughts, fires are more easily started and can burn much larger areas. Since the droughts from global warming have appeared, there have been massive fires in rainforests in Mexico, Brazil, Africa, Indonesia, and other rainforests, destroying tremendous areas. The droughts also cause the edges of rainforests to die. After the trees on the edges die and fall over, there is a new edge whose trees then dry out and die, in an endless cycle that can continue until the entire rainforest is gone.
+                            </p>
+                            <p class="text-gray-800">
+                                <strong>In 2005 and 2010</strong>, the Amazon experienced the worst droughts ever recorded. Rivers dried up, isolating communities, and millions of acres burned. The smoke caused widespread health problems, interfered with transportation, and blocked the formation of rain clouds.
+                            </p>
+                        </div>
+
+                        <p>
+                            In palm tree plantations that produce palm oil, corporations drain out much of the water to dry out the area to make a monoculture. These plantations easily catch fire. They often have a great deal of peat in the soil, so hot fires that are very hard to put out burn. Many of these are underground, so hard to access to put out. Many have burned for years. Some are still burning now. This happens in many parts of the world, but mainly in Southeast Asia. The smoke pollutes large areas, affecting the breathing and health of many people.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Rainforests Regulate the Global and Local Water Cycles</h3>
+                        <p>
+                            Rainforests are important in the regulation of the global water cycle. Thus, the destruction of rainforests affects Earth's water cycle and causes floods and droughts far from rainforests. São Paulo, Brazil's largest city, is suffering from serious droughts due to the destruction of the Amazon rainforest. This megacity of over 12 million people is literally running out of water [3].
+                        </p>
+                        <p>
+                            Deforestation in the Amazon and Central America severely reduces rainfall in the lower U.S. Midwest during the spring and summer seasons and in the upper U.S. Midwest during the winter and spring, respectively, and deforestation of Southeast Asia affects rainfall in China and the Balkan Peninsula significantly [4]. High-resolution simulations of destruction of the Amazon rainforest showed 10-20% less rainfall for the coastal northwest US and the Sierra Nevada, and declines of snowpack in the Sierra Nevada of up to 50% [5].
+                        </p>
+                        <p>
+                            Rainforests also play an important role in the local water cycle. Rainforest trees add water vapor to the atmosphere by transporting water in the ground through their roots, up their trunks, and through their leaves into the atmosphere in a process called evapotranspiration. This causes rain. Half of the rain in the Amazon rainforest is caused by the trees there, while the other half comes from water evaporated by the sun in the Atlantic Ocean.
+                        </p>
+                        <p>
+                            The rain that rainforests produce is needed by local farmers to grow food, people and animals for drinking, trees and plants to grow, and the rivers and lakes of the forest. These rivers lakes support fish, freshwater dolphins, turtles, and invertebrates, such as insect larvae and shrimp.
+                        </p>
+                        <p>
+                            Rainforest water is purified by tree roots and fungi underground, where toxins are removed. Roots of rainforest trees store large amounts of water. Without the rainforest to soak up rain and release it slowly, floods and droughts become more common. In the Amazon rainforest, more than half the water in the ecosystem is stored within the plants.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Medicine and Resources</h3>
+                        <p>
+                            Rainforests are the source of many essential foods, medicines (including 70% of plants identified as having anti-cancer properties), and everyday products we use. More than one fourth of the medicines we use today have their origins in rainforests, yet only 1% of rainforest plants have been studied for their medicinal properties. These forests harbor millions of undiscovered species that could provide future medical and agricultural breakthroughs.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Soil Protection</h3>
+                        <p>
+                            Rainforest trees and plants protect soil from erosion. When forests are cleared, heavy tropical rains wash away the thin, nutrient-poor soil within just a few years, leaving land unsuitable for agriculture and unable to support forest regrowth. This creates permanent ecological damage and contributes to desertification.
+                        </p>
+                        <p>
+                            Trees shade rivers and keep them cool enough for fish and other animals and plants in them to thrive. They stabilize river banks and prevent their erosion. Without this, sediment from soil would pollute rivers and lakes in the forest, and many fish, river dolphins, and aquatic invertebrates would die.
+                        </p>
+                        <p>
+                            Rainforest trees shade and protect the soil, blocking the hot, intense tropical sun from hitting it during the day. They hold heat in at night. Destroying the forest leads to more extreme temperature swings that are harmful to plants and animals. The trees also protect the soil from intense tropical rains. When the trees are removed, the rain washes the soil away, and the sun bakes the soil into a hard, brick-like state. In a short time, this can result in a desert on which no trees or food crops can grow.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Rainforests Regulate Earth's Reflectivity</h3>
+                        <p>
+                            Rainforests affect the reflectivity of sunlight by the Earth. This is called the Earth's albedo. When they are cut, the albedo changes, and sunlight is reflected differently. This changes wind patterns and therefore rain patterns of our planet. This causes floods and droughts, reducing our agricultural yields and ability to obtain clean drinking water. The floods cause soil erosion, making it harder for wild plants and trees to grow and for humans to grow food.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Economic Value</h3>
+                        <p>
+                            The economic value of rainforest biodiversity alone is estimated at 2-5 trillion dollars annually through ecosystem services, yet current destruction rates threaten to eliminate over three-quarters of unknown species before they can even be discovered. Sustainable use of rainforests provides long-term economic benefits that far exceed short-term extraction profits.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Rate of Loss -->
+                <div id="rate" class="mb-16 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">How Rapid is Rainforest Loss?</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <div class="bg-red-50 border-l-4 border-red-600 p-6 my-6">
+                            <p class="text-xl font-bold text-red-900 mb-4">Alarming Statistics:</p>
+                            <ul class="space-y-3">
+                                <li><strong>5 acres every second</strong> - or 300 acres per minute</li>
+                                <li><strong>80,000 acres destroyed daily</strong> - with another 80,000 significantly degraded</li>
+                                <li><strong>Half of California every year</strong> - area of rainforest permanently lost annually</li>
+                                <li><strong>135 species extinct daily</strong> - almost 50,000 species per year</li>
+                            </ul>
+                        </div>
+                        
+                        <p>
+                            Globally, rainforests are being destroyed at the rate of about 5 acres every second, or 300 acres per minute. We are losing over 80,000 acres, and significantly degrading another 80,000 acres, of tropical rainforest every single day. This is not a distant problem - it is happening right now, every minute of every day.
+                        </p>
+                        
+                        <p>
+                            Every year, the area of rainforests destroyed is equal to one half the size of the state of California. To put this in perspective, imagine losing an area the size of a football field every single second of every day throughout the year. This is the actual rate at which we are losing these irreplaceable ecosystems.
+                        </p>
+                        
+                        <p>
+                            The destruction of rainforests alone is causing the extinction of 135 plant and animal species every day, which is almost 50,000 species a year. This represents an extinction rate that is 1,000 to 10,000 times higher than the natural background extinction rate. We are in the midst of the sixth mass extinction event in Earth's history, and rainforest destruction is a primary driver.
+                        </p>
+                        
+                        <p>
+                            According to the United Nations' Food and Agriculture Organization, overall tropical deforestation rates this decade are 8.5 percent higher than during the 1990s, meaning the problem is getting worse, not better. Worse, the loss of primary tropical rainforest—the wildest and most diverse areas—has increased by as much as 25 percent since the 1990s. Thus, sadly, deforestation rates are rising rapidly. It is estimated that if the destruction is not stopped, rainforests will cease to exist except in a few protected areas within 60 years.
+                        </p>
+                        <p>
+                            Brazil has declared the situation in its Amazon Rainforest to be a national emergency. Madagascar has already lost over 60 percent of its rainforest habitat as of 2015. A Harvard biologist has estimated that the loss of rainforests could result in approximately 25 percent of the world's species becoming extinct by the second half of the 21st century.
+                        </p>
+
+                        <div class="bg-gray-100 p-6 rounded-lg my-6">
+                            <h4 class="text-lg font-bold text-gray-900 mb-3">Selective Logging: A Hidden Threat</h4>
+                            <p class="text-gray-800 mb-3">
+                                The Amazonian rainforest is being destroyed at double the rate of all previous estimates. An analysis of satellite images of the Brazilian part of the Amazon basin shows that on average 6,000 square miles of forest is being cut down by selective logging each year. This is in addition to a similar amount that is clear-cut annually for cattle grazing or farming.
+                            </p>
+                            <p class="text-gray-800 mb-3">
+                                Conservationists have been able to monitor large clear-cut areas using satellite images. But the extent of selective logging, where individual trees of high value, such as mahogany, are felled and smuggled out of the forest, has been unclear, the effects being masked from satellites by the forest's dense canopy.
+                            </p>
+                            <p class="text-gray-800 mb-3">
+                                From 1999 to 2002, 5 states in the Brazilian Amazon basin that account for 90% of deforestation lost between 4,685 and 7,973 square miles each year from selective logging alone. The cutting was shown to go much deeper into the interior of the forest than scientists had thought.
+                            </p>
+                            <p class="text-gray-800">
+                                In both Africa and Asia, large areas of rainforest are being cut down, often to remove just a few logs, and rainforest is being destroyed at double the rate of all previous estimates. On average, for every tree removed, up to thirty more can be severely damaged by the timber harvesting operation itself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motives for Destruction -->
+                <div id="motive" class="mb-16 bg-gray-50 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Why Are People Destroying Rainforests?</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            There are several reasons why people are destroying rainforests. The major ones are listed below.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Logging</h3>
+                        <p>
+                            Logging is thought to be the second largest cause of deforestation. According to the UN, up to 90% of logging in tropical rainforests is illegal. Large timber corporations cut down huge trees such as mahogany and teak, and sell them to other countries for building materials, making furniture, and paper production. Less valuable trees are cut and used to make wood chips.
+                        </p>
+                        <p>
+                            Clearcutting is the process by which large areas of rainforest are completely cut, felling every tree and leaving a vast barren area devoid of any vegetation. This is often done to get only a few trees, leaving the rest to decompose, because it is easier than selectively cutting and removing individual trees. This is because rainforest trees are intertwined by vines, and removing individual trees can require helicopters to lift them out of the forest. The roads that are created in order to gain access to and remove the timber are used by other exploiters to gain easy access to the rainforest to destroy it for any of the reasons discussed in this section.
+                        </p>
+                        <p>
+                            Local people, usually those who are poor, cut smaller trees to make charcoal to keep warm and cook their food. Overpopulation results in great numbers of poor people in rainforest areas, so vast areas of rainforest are destroyed by this method. As the forested area decreases, poor people need to walk greater and greater distances to obtain their wood for charcoal, often walking hours every day in the hot sun.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Very Large Dams</h3>
+                        <p>
+                            Large companies and banks invest money in developing countries to build dams for the generation of electricity. This involves flooding vast areas of rainforest. It creates artificial lakes, and the trees end up completely under water. The rainforest is completely destroyed. The electricity is often used for other destructive projects, such as to power iron mines, which destroy vast amounts of rainforest.
+                        </p>
+                        <p>
+                            Dams built in rainforest areas often have a short life because the submerged forest gradually rots, making the reservoir water acidic, which eventually corrodes the dam turbines. The dams can also become blocked with soil washed down from deforested highlands in heavy rains.
+                        </p>
+                        <p>
+                            Cut and burned trees add to climate change because they emit carbon dioxide when they decompose or burn. Oxygen cannot get to trees under water due to mega-dams, so different micro-organisms than the ones on land decompose them. These microbes emit methane instead of carbon dioxide. Methane is twenty-five times as powerful a greenhouse gas as carbon dioxide. So large dams that flood rainforests exacerbate climate change much more than the cutting or burning of them does.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Mining</h3>
+                        <p>
+                            Metals that are found under the ground below rainforests are mined for export by large corporations. These include iron, aluminum, copper, and gold. Large areas of rainforest are destroyed to obtain these metals. Poisonous chemicals are used to extract the metals. For example, mercury is used to separate gold from the soil and debris with which it is mixed. These poisons pollute rivers, killing fish, frogs, turtles, birds, dolphins, invertebrates, and water plants. People depend on the rivers for their water, and the fish and other aquatic animals for food. Often mining towns appear that are high in poverty, crime, and prostitution.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Oil</h3>
+                        <p>
+                            Rainforests are often destroyed by oil companies extracting oil from the ground below them. This is incredibly damaging, since large roads are built through untouched forests in order to build pipelines and extract the oil. This encourages settlers to move into hitherto pristine forests and start slash-and-burn farming or cutting more timber for sale or the production of charcoal. It also gives rich exploiters of the forest, such as ranchers and timber companies, access to destroy the rainforest.
+                        </p>
+                        <p>
+                            Once established, the oil pipelines which transport the oil often rupture, spouting gallons of oil into the surrounding forest, killing wildlife. The oil flows into rivers, killing fish and other organisms, and polluting and contaminating the water supplies of local villages and indigenous people.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Farming by Local People</h3>
+                        <p>
+                            Local people use what is called slash and burn agriculture, meaning small areas of rainforest are burned to plant crops. The crops can only be grown for about five years because the nutrients in rainforests are mainly in the trees, not the soil. (Most of the nutrients are in the soil in temperate forests). Since rainforest soils are low in nutrients, the nutrients are quickly depleted when it is farmed. And without the rainforest, the sun hits the soil, so the soil becomes very dry and hard, and cannot absorb water. The land becomes a crusty desert. So the farmers need to cut or burn more rainforest to continue farming.
+                        </p>
+                        <p>
+                            Because of the great number of poor people that farm by this method and their need to destroy more rainforest every few years to continue farming, this method of farming is believed to account for about 50% of rainforest destruction.
+                        </p>
+                        <p>
+                            Indigenous people also use slash and burn farming techniques, but on a very small scale. For centuries they have used a sustainable system where, when they finish using one small patch of land, they move away to a different area and allow the forest to regenerate. The area they clear is so small that the soil does not dry out and the forest grows back again.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Large-Scale Agriculture for Cash Crop Exports</h3>
+                        <p>
+                            Large corporations make a great deal of money by cutting and destroying very large areas of rainforest to plant cash crops for export to countries such as the United States and those in Europe. The forests are cut down to create cleared land for vast plantations where products such as bananas, palm oil, pineapple, sugar cane, tea, and coffee are grown.
+                        </p>
+                        <p>
+                            Just as with local farming, the nutrients are depleted within a few years, and the company moves on to cut another large area of rainforest, destroying it forever. But in this case, the area of rainforest destroyed per crop planted is much larger than when small farmers burn the forest to plant crops. In large corporate farms, herbicides and pesticides are used in great amounts. These toxins kill rainforest animals on land, in rivers, and in lakes, and cause cancer and other diseases in the local people.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Cattle Ranching</h3>
+                        <p>
+                            Many rainforests in Central and South America have been burnt down to grow grass for cattle to graze on. Cattle ranching in the rainforest supplies cheap beef, primarily to North America, China, and Russia. It often is used to make hamburgers for fast food restaurant chains. Cattle ranching in the rainforest is spectacularly inefficient. It is estimated that for each pound of beef produced, 200 square feet of rainforest is destroyed. Incredibly, another estimate is that it takes 5 acres of grassland from cleared rainforest in the tropics to support just one cow!
+                        </p>
+                        <p>
+                            In the past 20 years, Costa Rica has lost the majority of its forests to cattle ranching. Large amounts of water are used. The rainforest ends up as a desert. The methods to raise the cattle are often inhumane. In addition, beef causes heart disease, clogged arteries, some cancers, and other diseases. Cattle ranching in the rainforest is big business. Most of it is done by very rich ranchers and large corporations. As in agriculture, the nutrients in the soil to grow the grass get depleted in a few years, and the ranchers must cut more rainforest to raise cattle in a new area.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Road Construction</h3>
+                        <p>
+                            Roads built to the rainforest from populated areas are constructed to allow access to the rainforest to exploit it. They are also built to allow people to drive through the rainforest to get to their destinations. The mere presence of roads allows destroyers of rainforest to have access to it. Once the road is in place, exploiters clear-cut the rainforest for its wood, shoot its wildlife, mine the forest, drill in it for oil, plant cash crops, or destroy it for some other reason to make money. Therefore, sometimes the first and best step in saving rainforest is preventing the construction of roads from towns and cities to the rainforest.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Poaching of Animals and Plants</h3>
+                        <p>
+                            People shoot rainforest animals to eat them or sell their meat. This is often done by local poor people. Companies also catch animals from the rainforest to sell to the pet trade or zoos. People also kill animals to sell their skins or other parts. Some smuggle plants out to sell to collectors. Poachers sneak in and cut trees for timber. All this often happens in national parks and reserves because tropical countries often do not have enough money or the will to pay enough guards living wages to protect rainforests.
+                        </p>
+                        <p>
+                            Sometimes people shoot animals to eat them because they are poor and have a hard time obtaining enough food to feed themselves and their families. In these cases, we need to find alternatives for them to earn money so they do not have to kill animals to survive.
+                        </p>
+                        <p>
+                            When certain animals are killed off, many other species of animal and plant can die out. For example, if the jaguar is sent extinct locally in a rainforest, its prey will have population explosions. They will then eat so much of the animals and plants that they normally eat that these will go locally extinct or greatly decrease in number. Then animals and plants dependent of them will go locally extinct, in a catastrophic chain of die offs throughout the food webs of the rainforest.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Mining and Resource Extraction</h3>
+                        <p>
+                            Mining for gold, copper, iron ore, and other minerals requires clearing forest and often pollutes waterways with toxic chemicals. Oil and gas extraction similarly destroys forest and creates pollution. Small-scale gold mining alone has destroyed thousands of acres in the Amazon and poisoned rivers with mercury.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Infrastructure Development</h3>
+                        <p>
+                            Roads, dams, and urban expansion fragment rainforest and open previously inaccessible areas to exploitation. Very large dams flood vast areas of forest and disrupt river ecosystems. Roads act as corridors for further deforestation, with 95% of deforestation occurring within 5 kilometers of roads.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Subsistence Farming</h3>
+                        <p>
+                            Poor farmers practicing slash-and-burn agriculture clear forest for small farms. However, this accounts for only a small fraction of total deforestation compared to commercial operations. Often, these farmers have been displaced from better agricultural lands by large landowners and corporations.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">The Economic Fallacy</h3>
+                        <p>
+                            The methods employed by destructive industries are frequently economically short-sighted. Structures built in cleared rainforest deteriorate unusually rapidly due to acidic corrosion from rotting dead trees. Important sources of water become polluted and unusable. Soils lose fertility within a few years. The long-term economic losses far exceed short-term gains, but these costs are externalized to society while profits are privatized.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Climate Change</h3>
+                        <p>
+                            Climate change, which we are all contributing to, is playing a key role in rainforest loss. It causes droughts by reducing the capability of air to retain moisture, making forests more vulnerable to fire. Increased temperatures stress trees and alter ecosystems. This creates a vicious cycle where deforestation contributes to climate change, which in turn makes remaining forests more vulnerable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Economic Value -->
+                <div id="economy" class="mb-16 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Why Should I Be Concerned About the Rainforest Economically?</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            Even from a purely economic perspective, rainforest preservation makes excellent sense. The economic value provided by intact rainforests vastly exceeds the short-term profits from their destruction.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Rainforests Are a Source of Many of the World's Medicines</h3>
+                        <p>
+                            Tropical rainforests are a major source of medicines. Approximately 7,000 drugs used in Western medicine are derived from plants, and a majority of these are from rainforests. Over a quarter of the medicines we use today have their origins in rainforests, and only about 1% of rainforest plants have been studied for their medicinal properties.
+                        </p>
+                        <p>
+                            The estimated value of these medicines was US$43 billion in 1985. Seventy percent of the 3,000 plants used to treat cancer are from rainforests.
+                        </p>
+
+                        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 my-6">
+                            <h4 class="text-lg font-bold text-blue-900 mb-3">Specific Medicine Examples:</h4>
+                            <div class="space-y-3 text-gray-800">
+                                <p>
+                                    <strong>Vincristine</strong>, derived from the rosy periwinkle of the Madagascar rainforests, decreased the death rate from childhood leukemia from 80% to 20%. This cancer was much more likely a death sentence for children until this medicine was found. It also treats non-Hodgkin's lymphomas, rhabdomyosarcoma, neuroblastoma, and Wilms' tumor.
+                                </p>
+                                <p>
+                                    The rosy periwinkle also yields <strong>Vinblastine</strong>, which treats Hodgkin's disease, several lymphomas, advanced carcinoma of the testes, Kaposi's sarcoma, and other cancers. Another periwinkle plant was used for cancer-fighting drugs, but is now extinct because of rainforest destruction.
+                                </p>
+                                <p>
+                                    <strong>Captopril</strong>, created from the venom of the highly venomous fer-de-lance snake, prolongs, improves, and lengthens the lives of millions of people as a treatment for chronic high blood pressure. One billion people worldwide and one out of three people in the U.S. have high blood pressure. There are now nine other close chemical relatives of captopril ultimately derived from the fer-de-lance snake available for treatment. They are also used for congestive heart failure, coronary disease, and there is evidence that they reduce the risk of developing colorectal cancer.
+                                </p>
+                                <p>
+                                    <strong>Cyclosporine</strong>, derived from rainforest fungi, is an anti-rejection drug necessary for transplants to save lives.
+                                </p>
+                                <p>
+                                    <strong>Lidocaine</strong>, the local anesthetic so important in dentistry and procedures in which the patient is awake, comes from the rainforest.
+                                </p>
+                                <p>
+                                    <strong>Quinine</strong>, a treatment for malaria, is an alkaloid extracted from the bark of the cinchona tree found in Latin America and Africa.
+                                </p>
+                                <p>
+                                    From the deadly poisonous bark of various <strong>curare vines</strong>, used by generations of indigenous peoples in Latin America, comes treatments for multiple sclerosis, Parkinson's disease, and other muscular disorders. It also permits surgery because it is an anesthetic.
+                                </p>
+                                <p>
+                                    <strong>Theophylline</strong>, compounds from the trumpetflower, and cocoa are rainforest-derived, and treat asthma by opening airways.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Rainforest drugs prevent, treat, or cure headaches, pains, malaria, heart disease, bronchitis, hypertension, rheumatism, diabetes, muscle tension, arthritis, glaucoma, dysentery, tuberculosis, fungal disease, bacterial and viral diseases, and many other diseases. Several anesthetics, enzymes, hormones, laxatives, cough medicines, antibiotics, and antiseptics are derived from rainforests.
+                        </p>
+                        <p>
+                            Almost 90% of human diseases are treatable with drugs derived from nature. The benefits to humanity of medicines from the rainforest are spectacular in their increase in longevity, quality of life, and relief from suffering. Production of these drugs produces hundreds of thousands of jobs. Many billions of dollars stimulate the global economy as a result of these medications.
+                        </p>
+
+                        <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600 my-6">
+                            <h4 class="text-lg font-bold text-green-900 mb-3">Additional Rainforest Medicines:</h4>
+                            <div class="space-y-2 text-gray-800">
+                                <p>
+                                    <strong>Contraceptives:</strong> Wild yams from rainforests in Mexico and Guatemala give us diosgenin and cortisone, the active ingredients in birth control pills. Until recently, this plant provided the world with its entire supply of diosgenin. Contraceptives are crucial in controlling world population, which is a leading threat to the climate and global environment.
+                                </p>
+                                <p>
+                                    <strong>Biodegradable Pesticides:</strong> Natural biochemicals in rainforest plants hold promise for safe, less toxic, biodegradable pesticides for farmers, replacing the threat to human health and nature posed by many of today's chemical pesticides.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Yet only 1% of rainforest plants have been studied for their medicinal properties. There are millions of animal, plant, and fungus species that have not been discovered or described by science. If deforestation continues at the current rate, more than three quarters of these will be made extinct before they are discovered. Sadly, 137 rainforest species are exterminated completely every single day.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Rainforests Are a Source of Food, Drinks and Spices</h3>
+                        <p>
+                            Many of the foods, beverages, and spices we eat and drink originated in rainforests. Bananas, oranges, lemons, grapefruits, pineapples, guavas, avocados, cashew nuts, Brazil nuts, coffee beans, sugar cane, coconuts, sugar palms, other species of palm trees, coffee, and many other foods and beverages all originated in rainforests.
+                        </p>
+
+                        <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600 my-6">
+                            <h4 class="text-lg font-bold text-purple-900 mb-3">The Açaí Berry - A Rainforest Superfood</h4>
+                            <p class="text-gray-800 mb-2">
+                                The açaí palm tree grows naturally in the Amazon rainforest and its berries, rich in protein and minerals, can be harvested without harming the forest. Science has shown the açaí berry to be an especially effective health food:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-1 text-gray-800">
+                                <li>Rich in antioxidants, which protect from cancer and cell damage from free radicals</li>
+                                <li>Strengthens the immune system</li>
+                                <li>High in fiber</li>
+                                <li>Keeps blood sugar steady</li>
+                                <li>Has heart-healthy omega-3 fatty acids</li>
+                                <li>High in calcium for strong bones, heart, muscles, and nerves</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Modern technology has allowed us to grow many of these staples in temperate regions. However, all of these foods, beverages, and spices are constantly under threat from viruses, bacteria, fungus, drought, flooding, heat, and cold. They require a constant input of new varieties for genetic variability to be able to evolve and respond to these threats. The only source of these new varieties and genes are the wild varieties in rainforests. Therefore, without rainforests, we would lose a great portion of our food supply.
+                        </p>
+                        <p>
+                            Unfortunately, some of these foods from the rainforests are grown in a way that is harmful to their environment. It's important to select foods that are grown with Earth-friendly farming methods. Check the labels on the foods you eat to ensure you are choosing organic products, or products endorsed by Fairtrade, the Rainforest Alliance, or the Forest Stewardship Council.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Spices and Flavorings</h3>
+                        <p>
+                            Black pepper, cinnamon, cloves, vanilla, ginger, turmeric, cardamom, nutmeg, and numerous other spices all originated in rainforests. The global spice market is worth tens of billions of dollars annually, and all of it traces back to rainforest plants.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Industrial Products</h3>
+                        <p>
+                            Rainforests provide rubber, resins, oils, fibers, dyes, and numerous other industrial products. Natural rubber from rainforest trees is essential for aircraft tires and other applications where synthetic rubber cannot match its properties. These sustainable products can be harvested without destroying the forest.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Ecosystem Services</h3>
+                        <p>
+                            The economic value of ecosystem services provided by rainforests is estimated at $2-5 trillion dollars annually. This includes climate regulation, water purification, oxygen production, soil formation, and nutrient cycling. These services benefit everyone on Earth but are not captured in traditional economic accounting.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Tourism and Recreation</h3>
+                        <p>
+                            Ecotourism generates billions of dollars annually and provides sustainable income to local communities. Costa Rica's focus on rainforest conservation has made it a top tourist destination, with tourism contributing over 12% of GDP. This demonstrates that preserving rainforests can be more profitable than destroying them.
+                        </p>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                            <h4 class="text-xl font-bold text-emerald-900 mb-4">Foods, Spices, and Beverages from the Rainforest</h4>
+                            <p class="mb-4">
+                                The following are lists of foods, spices, and beverages that come from the rainforest. They are not comprehensive.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-bold text-gray-900">Fruits and Vegetables:</p>
+                                    <p class="text-gray-700">Avocado, banana, grapefruit, guava, heart of palm, lemon, lime, mango, orange, papaya, passion fruit, pepper, pineapple, plantain, potato, sweet potato, tangerine, tomato, yam</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Spices and Flavors:</p>
+                                    <p class="text-gray-700">Allspice, black pepper, cardamom, cayenne, chili pepper, chocolate (cocoa), cinnamon, cloves, ginger, mace, nutmeg, paprika, turmeric, vanilla</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Other Food Products:</p>
+                                    <p class="text-gray-700">Brazil nuts, cashew nuts, coconut, coffee, cola, corn, macadamia nuts, peanuts, rice, sesame seeds, sugar, tapioca (from the cassava plant)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                            <h4 class="text-xl font-bold text-emerald-900 mb-4">Products We Use Every Day from the Rainforest</h4>
+                            <p class="mb-4">
+                                The average person in the industrialized world cannot get through one day without using several products from the rainforest. The following products used daily by essentially everyone are derived from rainforests.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-bold text-gray-900">Houseplants:</p>
+                                    <p class="text-gray-700">African violet, begonia, bromeliads, Christmas cactus, croton, dracaena, fiddle leaf fig, orchids, philodendron, prayer plant, rubber plant, snake plant (Sansevieria), umbrella tree (Schefflera)</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Gums and Resins:</p>
+                                    <p class="text-gray-700">Chicle (chewing gum), copal (varnish, printing ink), rubber (balloons, erasers, foam rubber, balls, rubber bands, gloves, hoses, shoes, tires)</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Oils:</p>
+                                    <p class="text-gray-700">Bay (bay rum lotion), camphor (insect repellent, lotion), coconut (baked goods, lotion, soap), lime (food flavoring, candles, soap, bath oil), palm (snack food, baked goods), patchouli (perfume, soap), rosewood (soap, candles, perfume)</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Woods:</p>
+                                    <p class="text-gray-700">Balsa, mahogany, rosewood, sandalwood, teak (all of these are used in furniture, doors, floors, paneling, cabinets, carvings, toys, and models)</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-900">Canes and Fibers:</p>
+                                    <p class="text-gray-700">Bamboo (furniture, crafts), jute (rope, twine, burlap), kapok (insulation, stuffing), ramie (knit materials), rattan (furniture, wicker, cane, chair seats)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="bg-white p-6 rounded-lg mt-8">
+                            <strong>The Bottom Line:</strong> Rainforests are home to half of the Earth's plant and animal species. We are far from finished discovering useful and valuable species in the rainforest, therefore preserving rainforest is a smart economic move. The unknown economic value of undiscovered species alone justifies preservation, even before considering the known economic benefits.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Biodiversity -->
+                <div id="biodiversity" class="mb-16 bg-gray-50  p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Rainforest Biodiversity</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            Tropical rainforests are the most biodiverse ecosystems on Earth, containing an estimated 50% of all terrestrial plant and animal species despite covering only 6-7% of the Earth's land surface. This extraordinary concentration of life represents millions of years of evolution in stable, complex ecosystems.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Species Richness</h3>
+                        <p>
+                            Rainforests are home to millions of species, including 70% of Earth's land animals and plants, and half the Earth's total species, including the ones that live in the ocean. This includes chimpanzees, orangutans, many species of monkeys, rare river dolphins, sloths, gorgeous parrots and toucans, and large and spectacular butterflies.
+                        </p>
+
+                        <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600 my-6">
+                            <h4 class="text-lg font-bold text-yellow-900 mb-3">Astonishing Examples of Rainforest Biodiversity:</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-800">
+                                <li><strong>Costa Rica</strong> is smaller than the state of West Virginia, with its widest point being only 185 miles across. Yet it has as many bird species as all of the United States and Canada combined! It contains approximately half a million species of animals and plants.</li>
+                                <li><strong>The Amazon River</strong> has as many species of fish as the entire Atlantic Ocean!</li>
+                                <li>A study of diversity in a rainforest in <strong>Peru</strong> caused the estimate of the number of species of animals in the world to be revised from 5 to 10 million up to 30 to 60 million.</li>
+                                <li>Most of the rainforest species are in the <strong>canopy</strong>, high up in the tops of the trees.</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Our closest relatives, the great apes, live in tropical rainforests and cloud forests. Chimpanzees and orangutans live in rainforests, while gorillas live in cloud forests. The Bonobo Chimpanzee is the closest relative of the human - 98% of their DNA is identical to ours. Bonobos are a peaceful species of the rainforest that settle disputes without violence. They are threatened with extinction because their rainforest habitat is threatened, as is true of all great apes.
+                        </p>
+                        <p>
+                            Rainforests provide a habitat for migratory birds to live during the harsh winters of the temperate and polar regions of the Northern and Southern hemispheres.
+                        </p>
+                        <p>
+                            Because of this high diversity of plant and animal life, economic losses of 2 to 5 trillion US dollars per year are attributed to downgrading rainforest to pasture and less productive land use [1].
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Unique Adaptations</h3>
+                        <p>
+                            Rainforest species have evolved remarkable adaptations. Poison dart frogs secrete toxins used by indigenous people for hunting. Plants like the pitcher plant have evolved to capture and digest insects. Orchids have developed intricate relationships with specific pollinator species. These adaptations represent millions of years of evolution and cannot be recreated once lost.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Undiscovered Species</h3>
+                        <p>
+                            Scientists estimate that we have identified less than 10% of rainforest species. New species are discovered constantly - in the Amazon alone, a new species is discovered on average every three days. However, current deforestation rates mean that many species will go extinct before they are ever discovered, described, or studied.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Interconnected Ecosystems</h3>
+                        <p>
+                            Rainforest species exist in complex webs of interaction. Many trees depend on specific animals for pollination or seed dispersal. Some species cannot survive without others. When one species goes extinct, it can trigger cascading extinctions. The Brazil nut tree, for example, requires a specific orchid bee for pollination, and the bees require intact forest. Destroy the forest, and both the bees and trees disappear.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Genetic Diversity</h3>
+                        <p>
+                            Beyond species diversity, rainforests harbor immense genetic diversity within species. This genetic variation is crucial for species' ability to adapt to changing conditions. It also represents an invaluable resource for agriculture and biotechnology. Each population lost represents a permanent loss of unique genetic information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Indigenous People -->
+                <div id="indigenous" class="mb-16 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Indigenous People and the Rainforest</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            Rainforests are home to indigenous peoples whose cultures, livelihoods, and identities are inseparable from the forest. These communities have lived sustainably in rainforests for thousands of years and are the forest's most effective guardians.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Traditional Knowledge and Shamans</h3>
+                        <p>
+                            Indigenous peoples possess detailed knowledge about medicinal plants, sustainable hunting and gathering, and forest ecology. Knowledge of the shamans, or medicine men, of indigenous people of the rainforest is extensive. <strong>A given shaman knows as much botany as a Ph.D. botanist at any major university in the US.</strong> The shaman knows more about the medicinal uses of plants, while the US botanist knows plant physiology, internal structure, ecology, and so on.
+                        </p>
+                        <p>
+                            Shamans in Southeast Asia use about 6,500 different plants to treat diseases. Their traditional methods are in treating both physical and psychological ailments. The U.N.'s World Health Organization estimates that 80 percent of people in developing countries rely on traditional medicine for their primary health care needs.
+                        </p>
+                        <p>
+                            Shamans teach researchers about their medicines, so we can use them for our health care needs. One scientist stated, <em>"Each time a medicine man dies, it is as if a library has been burned down."</em> Scientists often modify the chemical structure of the rainforest medicine to make it more effective.
+                        </p>
+                        <p>
+                            We can learn from these special people about medicines from the rainforest, other uses of animals and plants there, spirituality, sustainable living, deep ecology, respect for the Earth, and appreciation of its beauty and of life. Anthropologists learn about other cultures, ways of living, and views of the world from people of the rainforests.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Sustainable Forest Use</h3>
+                        <p>
+                            Indigenous communities have developed sustainable ways of using forest resources without causing permanent damage. Their traditional practices - including rotational farming, selective harvesting, and leaving large areas undisturbed - maintain forest health while providing for human needs. Studies show that forests under indigenous management have lower deforestation rates than surrounding areas, even including protected reserves.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Cultural Diversity</h3>
+                        <p>
+                            The Amazon alone is home to over 400 indigenous tribes speaking over 300 languages. Each culture represents a unique way of understanding and relating to the natural world. Many tribes remain uncontacted or have minimal contact with outside world. Their languages encode sophisticated environmental knowledge and cultural wisdom that exists nowhere else.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Threats to Indigenous Peoples</h3>
+                        <p>
+                            Indigenous peoples face numerous threats from deforestation and resource extraction. They are displaced from traditional lands, exposed to diseases they lack immunity to, and suffer violence from illegal loggers, miners, and land grabbers. When forests are destroyed, indigenous peoples lose their homes, their livelihoods, and often their lives. Since 1900, 90 Brazilian tribes have been completely wiped out.
+                        </p>
+                        <p>
+                            Even when they survive physical threats, the destruction of their forest home destroys their culture. Young people may be forced to leave traditional territories to find work. Languages and traditional knowledge disappear as elders die without passing knowledge to the next generation. This represents a loss not just for indigenous peoples but for all humanity.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">Indigenous Rights and Conservation</h3>
+                        <p>
+                            Recognizing indigenous land rights is one of the most effective conservation strategies. Studies consistently show that indigenous territories have lower deforestation rates than other areas. Indigenous Reserves comprise 20% of the Brazilian Amazon rainforest. They are now increasingly targeted by illegal loggers and poachers because they are still intact.
+                        </p>
+                        <p>
+                            Indigenous people are natural protectors of the rainforest. They live there and want to protect their homes, so will defend it without being paid. Guards in countries with protected areas of rainforests like national parks need to be paid. Often these countries either lack the funds or the will to pay enough guards to protect the forest, so exploiters destroy forest and kill wildlife in national parks. The parks are paper parks, parks in name only.
+                        </p>
+                        <p>
+                            Indigenous people want to defend their rainforest home, but often lack the resources to do so. However, they can protect the rainforest if they are given the support that organizations such as the World Rainforest Fund give them. Therefore, you can support the rainforest by donating to the World Rainforest Fund.
+                        </p>
+                        
+                        <h3 class="text-2xl font-bold text-emerald-900 mt-8">The Way Forward</h3>
+                        <p>
+                            Effective rainforest conservation must include indigenous peoples as partners, not obstacles. Their traditional knowledge and commitment to forest preservation make them natural allies in conservation efforts. The World Rainforest Fund supports organizations that work with indigenous communities to defend their land rights and preserve both cultural and biological diversity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- How Can You Help -->
+                <div id="help" class="mb-16 bg-gray-50 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">How Can You Help Save the Earth's Rainforests?</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Support Nonprofit Organizations Working to Save Rainforests</h3>
+                            <p>
+                                It helps them tremendously to receive your financial donations. You can join them as a member. You can volunteer for them. As a member, they often have newsletters that keep you informed. They often send action alerts by email that you can act on to help save rainforests. These are petitions, letters to political leaders, letters to newspapers, and other items that you can sign to help preserve rainforests.
+                            </p>
+                            <p>
+                                The most effective and ethical non-profit, tax-exempt organizations working to preserve rainforests, besides the World Rainforest Fund, are listed on this website.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Recycle and Reuse</h3>
+                            <p>
+                                Paper is made from the wood of trees. The more paper is recycled, the less the demand to cut trees for paper production. Recycling other material from plastic to glass to cans is healthy for the Earth in general, and can as a result potentially help rainforests. Recycling is good for the planet in general, not just rainforests.
+                            </p>
+                            <p>
+                                Even better for the Earth than recycling is reusing products whenever possible.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Hold an Event to Raise Money</h3>
+                            <p>
+                                Fundraising events to save rainforests are especially popular among school students ranging from kindergarten to the last year of high school. They are also done by people who are no longer in school.
+                            </p>
+                            <p><strong>Here are some ideas for school fundraisers:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Bake sales of home-made cakes, cookies and other foods. It is better yet with organic fruits and vegetables, instead of sugar-laden foods or meat. This is better for the health, the planet, and the rainforest. These can be held during lunch hour, or after school to bring in the parents.</li>
+                                <li>Compile a booklet of rainforest poems and stories written by each member of the class and sell them to parents.</li>
+                                <li>Throw a fun party of dance, poetry, songs, films, or talks on the rainforest, and invite parents and others to come for an admission fee.</li>
+                                <li>Have a contest on any topic you think of. People can enter the contest for a fee.</li>
+                                <li>Organize a sponsored roller disco; run, walk, cycle, read, time of silence, or anything else you can think of. For example, sponsors donate a certain amount of money for each mile the student they sponsor walks, runs, or rides. Teachers and parents could be sponsors.</li>
+                                <li>Organize a school litter pick-up. Pick up litter and recycle the litter that should be recycled, putting the rest in the trash.</li>
+                            </ul>
+                            <p>There are many other methods to hold fundraisers. Brain storm together and use your imagination for more ideas.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Write Letters</h3>
+                            <p>Write to political leaders and newspapers in support of preserving rainforests.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Talk and Educate</h3>
+                            <p>Educate people you know about the need to preserve rainforests. Encourage people to do the actions on this list, and to live in a way that does not hurt the environment.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Drive Less</h3>
+                            <p>Walking, riding your bike, and taking public transportation adds less greenhouse gasses to the air than driving. Warming of the climate is causing drought in rainforests. As a result, they have more and bigger fires, and are drying out and dying around their edges.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Lobby Companies That Destroy Rainforest</h3>
+                            <p>
+                                You can do this by not buying their products and writing them to let them know you are boycotting them and why, and what you want them to do to change. You can join Rainforest Action Network, which specializes in this. You can also search the internet for such companies. PepsiCo is currently an example of such a company.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Do Not Buy Illegal or Unsustainable Products</h3>
+                            <p>
+                                Many animals and plants from the rainforest are brought to our country illegally for pets or house plants. Many are endangered. Their export often impacts their populations negatively, adding to their endangerment. They are often treated inhumanely and suffer. Many die before reaching the consumer. Parrots and iguanas, for example, are often imported illegally. We should not buy these animals and plants.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Invest Your Money Responsibly</h3>
+                            <p>
+                                There are many social investment funds that invest only in socially and environmentally responsible companies. Ask your investment advisor or search the internet to find them.
+                            </p>
+                            <p>
+                                Here is a link to a website called "7 of the Best Socially Responsible Funds": <a href="https://money.usnews.com/investing/slideshows/7-of-the-best-socially-responsible-funds" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://money.usnews.com/investing/slideshows/7-of-the-best-socially-responsible-funds</a>
+                            </p>
+                            <p>Green Century Funds and RSF Social Finance are examples of socially and environmentally responsible funds.</p>
+                        </div>
+
+                        <div class="bg-emerald-100 p-6 rounded-lg border-2 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Be an Ethical Consumer</h3>
+                            <p class="mb-4">
+                                Most of the products that we use in our country that come from rainforests, such as fruits, coffee, and rainforest lumber are produced in ways that destroy rainforests. Each of us needs to be thoughtful about the way we consume these products. Here is a list of rainforest products of concern and sustainable alternatives:
+                            </p>
+
+                            <!-- Product Categories -->
+                            <div class="space-y-6 mt-6">
+
+                                <!-- 1. Beef -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">1. Beef</h4>
+                                    <p class="mb-3">
+                                        Approximately 65-70% of deforestation in the Amazon occurs because rainforest is cut to make room for cattle ranching. Worldwide, demand for beef is increasing. Large areas of the rainforest are being destroyed so that ranchers can meet this increasing demand. After about 5 years, the soil is depleted, and they need to cut more rainforest to grow grass to raise cattle in a new area.
+                                    </p>
+                                    <p class="mb-3">
+                                        Great amounts of toxins are put into the environment from industrial production and pesticides each year. Even without these toxins, beef is bad for your heart and causes cancer.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Sustainable alternatives:</p>
+                                    <ul class="list-disc pl-6 space-y-1">
+                                        <li>Cargill: <a href="https://www.cargill.com/sustainability/sustainable-beef" target="_blank" class="text-blue-600 hover:text-blue-700 underline">sustainable beef</a></li>
+                                        <li>Porter Road: <a href="https://porterroad.com/collections/beef" target="_blank" class="text-blue-600 hover:text-blue-700 underline">sustainable beef</a></li>
+                                        <li>More info: <a href="https://www.beefitswhatsfordinner.com/newsroom/sustainable-diet" target="_blank" class="text-blue-600 hover:text-blue-700 underline">sustainable diet</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- 2. Hardwood Products -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">2. Hardwood Products</h4>
+                                    <p class="mb-3">
+                                        Over 75% of timber comes from illegal logging operations in the Amazon. When you purchase furniture, hardwood floors, and products made from hardwood timber, there is a very good chance that it originated from illegal logging in the Amazon. Please carefully check the source of any hardwood you buy to be certain that it is sustainably harvested.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Look for certification:</p>
+                                    <p>
+                                        The Forest Stewardship Council (FSC) certifies that wood was harvested sustainably. Free list available at: <a href="https://advocate.us.fsc.org/product-recommendations/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">FSC product recommendations</a>
+                                    </p>
+                                </div>
+
+                                <!-- 3. Coffee -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">3. Coffee</h4>
+                                    <p class="mb-3">
+                                        As a result of the rapidly rising demand for coffee worldwide, many coffee producing regions have switched over to sun-grown coffee to increase productivity. However, this method requires the destruction of the forest where the coffee is being grown, unlike shade-grown coffee. Even fair trade coffee fails to address this problem - the fair trade label has no environmental requirements at all.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Buy certified shade-grown coffee:</p>
+                                    <ul class="list-disc pl-6 space-y-1">
+                                        <li>Look for Rainforest Alliance certification</li>
+                                        <li>Counter Culture Coffee (North Carolina)</li>
+                                        <li>Portland Roasting Coffee (Oregon)</li>
+                                        <li>Colectivo Coffee (Wisconsin)</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 4. Chocolate -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">4. Chocolate</h4>
+                                    <p class="mb-3">
+                                        Chocolate production in the Amazon has increased by up to 5 times in approximately the last 20 years because of high demand. This has caused tremendous deforestation and CO2 production. Just one chocolate plantation in Peru destroys 5,000 acres of rainforest! Darker chocolate has more cacao and less sugar, so is healthier, and more money goes to chocolate farmers.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Buy certified sustainable chocolate:</p>
+                                    <ul class="list-disc pl-6 space-y-1">
+                                        <li>Look for Rainforest Alliance and UTZ certification</li>
+                                        <li>Info: <a href="https://www.rainforest-alliance.org/faqs/what-does-rainforest-alliance-certified-mean" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Rainforest Alliance certification</a></li>
+                                        <li>Guide: <a href="https://medium.com/asparagus-magazine/5-ways-to-choose-sustainable-ethical-chocolate-cocoa-certification-e301e79726bb" target="_blank" class="text-blue-600 hover:text-blue-700 underline">sustainable chocolate guide</a></li>
+                                        <li>Cargill: <a href="https://www.cargill.com/static/cocoa-sustainability" target="_blank" class="text-blue-600 hover:text-blue-700 underline">sustainable cocoa</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- 5. Paper -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">5. Paper</h4>
+                                    <p class="mb-3">
+                                        Paper comes from trees, and is responsible for the destruction of a great deal of both rainforest and temperate forest. Toilet paper accounts for 10% of total paper usage. Every day, 27,000 trees worth of toilet paper are flushed down the toilet. Using pulp from rainforest trees for toilet paper is a leading cause of rainforest destruction.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Use recycled paper products:</p>
+                                    <ul class="list-disc pl-6 space-y-1">
+                                        <li>The PAPER MILL store: <a href="https://www.thepapermillstore.com/paper/recycled-paper" target="_blank" class="text-blue-600 hover:text-blue-700 underline">recycled paper</a></li>
+                                        <li>Seventh Generation recycled toilet paper (available at Whole Foods)</li>
+                                        <li>Grove Collaborative: recycled toilet paper, tissues, napkins, and paper towels</li>
+                                        <li>Consider using a bidet to reduce paper use</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 6. Soy -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">6. Soy</h4>
+                                    <p class="mb-3">
+                                        Most soy is used as feed for cattle, chickens, and pigs. Soy farming drives deforestation in Brazil, Paraguay, and Bolivia. Buy soy that is not grown in the rainforest. Organic soy is better for your health and the Earth, and not that much more expensive than soy grown with pesticides.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Choose organic soy:</p>
+                                    <p>Organic soy beans and organic tofu can be found in Whole Foods and other grocery stores.</p>
+                                </div>
+
+                                <!-- 7. Palm Oil -->
+                                <div class="bg-white p-5 rounded-lg shadow">
+                                    <h4 class="text-xl font-bold text-red-900 mb-3">7. Palm Oil</h4>
+                                    <p class="mb-3">
+                                        Palm oil is used in many products. The deforestation associated with palm oil is vast, particularly in Indonesia, Papua New Guinea, and Malaysia. Half of the Bornean orangutan population has been killed off in just 16 years, with habitat destruction by the palm oil industry a leading driver. More than three-quarters of Tesso Nilo national park, home to orangutans, tigers, and elephants, has been converted into illegal palm oil plantations.
+                                    </p>
+                                    <p class="mb-3">
+                                        The plantation sector is the single largest driver of deforestation in Indonesia. Around 24 million hectares of rainforest was destroyed in Indonesia between 1990 and 2015. Scientists say there is no really sustainable palm oil at present. It is best to buy a different type of oil for cooking.
+                                    </p>
+                                    <p class="font-semibold text-emerald-900">Take action:</p>
+                                    <ul class="list-disc pl-6 space-y-1">
+                                        <li>Read labels of snack foods to see if they contain palm oil</li>
+                                        <li>Avoid products with palm oil unless sustainably produced</li>
+                                        <li>PepsiCo is one of the biggest purchasers of palm oil without an adequate policy</li>
+                                        <li>Rainforest Action Network has a list of the worst companies (the "Snack Food 20")</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <p class="mt-6 font-semibold">
+                                Our consumer choices have large impacts on the environment. Let us make Earth-friendly choices in the products we use.
+                            </p>
+                            <p class="mt-4">
+                                Additional resources:<br>
+                                Rainforest Relief: <a href="http://www.rainforestrelief.org/What_to_Avoid_and_Alternatives.html" target="_blank" class="text-blue-600 hover:text-blue-700 underline">What to Avoid and Alternatives</a>
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-600">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Establish National Parks and Other Preserves</h3>
+                            <p>
+                                Although these parks often do not have enough guards to protect rainforests, they are better than nothing, and have the force of law behind them. Some are successful. This is a collective action we need to do as a society, and that must be accomplished by the nation with the rainforest that needs protection. However, there may be times when we can write letters or lobby for this.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- References -->
+                <div id="references" class="mb-16 p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">References</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            [1] <a href="https://www.nrdc.org/experts/jake-schmidt/deforestation-costs-worldwow-big" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://www.nrdc.org/experts/jake-schmidt/deforestation-costs-worldwow-big</a>
+                        </p>
+                        <p>
+                            [2] <a href="https://www.interacademies.org/sites/default/files/2020-05/IAP%20Statement%20on%20Tropical%20Forests%20and%20Climate%20Change.pdf" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://www.interacademies.org/sites/default/files/2020-05/IAP%20Statement%20on%20Tropical%20Forests%20and%20Climate%20Change.pdf</a>
+                        </p>
+                        <p>
+                            [3] <a href="https://in.reuters.com/article/foundation-brazil-drought-idINKCN0ID1Y420141024" target="_blank" class="text-blue-600 hover:text-blue-700 underline font-semibold">https://in.reuters.com/article/foundation-brazil-drought-idINKCN0ID1Y420141024</a>
+                        </p>
+                        <p>
+                            [4] Avissar, D. & Werth, D. (April, 2005). Global hydroclimatoloigal teleconnections resulting from tropical deforestation. <em>Journal of Hydrometeorology</em> 6: 134-45.
+                        </p>
+                        <p>
+                            [5] Medvigy, D. (Nov., 2013). Simulated changes in Northwest U.S. climate in response to Amazon deforestation. <em>Journal of Climate</em>. <a href="https://doi.org/10.1175/JCLI-D-12-00775.1" target="_blank" class="text-blue-600 hover:text-blue-700 underline">https://doi.org/10.1175/JCLI-D-12-00775.1</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
