@@ -99,7 +99,7 @@
                     <h2 class="text-3xl font-bold text-center mb-8">How to Donate</h2>
 
                     <div class="prose prose-lg max-w-none text-gray-700 mb-8">
-                        <p><strong>We accept both donations by check and via Paypal. We prefer check because Paypal charges a few percent processing fee.</strong></p>
+                        <p><strong>We accept both donations by check and via Stripe. We prefer check because Stripe charges a few percent processing fee.</strong></p>
                     </div>
 
                     <div class="space-y-8">
@@ -122,19 +122,46 @@
                             </p>
                         </div>
 
-                        <!-- PayPal -->
+                        <!-- Stripe -->
                         <div class="border-l-4 border-emerald-600 pl-6">
-                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">Donate via PayPal</h3>
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">Donate via Stripe</h3>
                             <p class="text-gray-700 mb-4">
-                                To donate via Paypal please click this Paypal Donate button:
+                                To donate via Stripe please enter the donation amount below and then click this Stripe Donate button:
                             </p>
                             <div class="text-center">
+                                <script async
+                                  src="https://js.stripe.com/v3/buy-button.js">
+                                </script>
+
+                                <stripe-buy-button
+                                      buy-button-id="buy_btn_1Sv4gCH7WC28JBXaob53ZvbP"
+                                      publishable-key="pk_live_51Sv24hH7WC28JBXaQKUKTXZStCIph4ktqngLLF5P9Kssg31K4D48awM4jn0BeyGIXLjVO9Lm6gwLP2KQ5rFpIRFY00xzgkQ1Ob"
+                                >
+                                </stripe-buy-button>
+                                
+                                <!-- old paypal
                                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                                     <input type="hidden" name="cmd" value="_s-xclick" />
                                     <input type="hidden" name="hosted_button_id" value="LM3FN8PVV3M5L" />
                                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                                     <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                                </form>
+                                </form>-->
+                            </div>
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-3">Monthly Donation via Stripe</h3>
+                            <p class="text-gray-700 mb-4">
+                                To make a monthly donation via Stripe please click this Stripe Donate button:
+                            </p>
+                            <div class="text-center">
+                                <script async
+                                      src="https://js.stripe.com/v3/buy-button.js">
+                                </script>
+
+                                <stripe-buy-button
+                                      buy-button-id="buy_btn_1Sv4hyH7WC28JBXapR5SBbED"
+                                      publishable-key="pk_live_51Sv24hH7WC28JBXaQKUKTXZStCIph4ktqngLLF5P9Kssg31K4D48awM4jn0BeyGIXLjVO9Lm6gwLP2KQ5rFpIRFY00xzgkQ1Ob"
+                                >
+                                </stripe-buy-button>
+
                             </div>
                         </div>
 
