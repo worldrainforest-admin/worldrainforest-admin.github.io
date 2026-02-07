@@ -1,3 +1,2 @@
-# worldrainforest.org robots.txt
 User-agent: *
 Allow: /
