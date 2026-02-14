@@ -3,13 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
+    <title>Videos - World Rainforest Fund</title>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description" content="Educational videos about rainforest conservation and biodiversity.">
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Quattrocento Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif; }
+        .nav-checkbox { display: none; }
+        .nav-checkbox:checked ~ .mobile-menu { display: block; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: block !important; }
+        }
+    </style>
 </head>
-<body>
-    <h1>Videos</h1>
-    <h2>Expansion of the Pitalala Reserve in the Amazon rainforest of Ecuador</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oExEiRrpNtg" frameborder="0" allowfullscreen></iframe>
-    <h2>KGO Radio Interview</h2>
-    <!-- Existing content for the KGO Radio Interview section -->
+<body class="bg-white text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="static/images/wrflogo_upscaled.png" alt="World Rainforest Fund Logo" class="h-12 md:h-16 w-auto">
+                    <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">WORLD RAINFOREST FUND</span>
+                </a>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="nav-checkbox">
+            <nav class="mobile-menu hidden md:block mt-4">
+                <ul class="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-1 md:gap-2 text-sm">
+                    <li><a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Contact</a></li>
+                    <li><a href="donate.html" class="block px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 rounded transition">Donate</a></li>
+                    <li><a href="advisory-board.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Advisory Board</a></li>
+                    <li><a href="projects-and-grants.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Projects & Grants</a></li>
+                    <li><a href="mission-statement.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Mission Statement</a></li>
+                    <li><a href="all-about-rainforests.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">All About Rainforests</a></li>
+                    <li><a href="articles.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Articles</a></li>
+                    <li><a href="books.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Books</a></li>
+                    <li><a href="rainforest-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Rainforest Organizations</a></li>
+                    <li><a href="partner-organizations.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Partner Organizations</a></li>
+                    <li><a href="photo-gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Photo Gallery</a></li>
+                    <li><a href="videos.html" class="block px-4 py-2 text-gray-900 font-semibold hover:bg-emerald-50 rounded transition">Videos</a></li>
+                    <li><a href="grant-application.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Grant Application</a></li>
+                    <li><a href="legal-documents.html" class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 rounded transition">Legal Documents</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 text-white py-16 md:py-24" style="background-image: url('static/images/background-images/background-images/975415189.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Videos</h1>
+                <p class="text-xl md:text-2xl">Educational content about rainforest ecosystems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg max-w-none text-gray-700 mb-12">
+                    <p class="text-xl text-center">
+                        Explore documentaries and educational videos about rainforest ecology, conservation efforts, and the critical importance of protecting these vital ecosystems.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+
+                    <!-- Video 1: KGO Radio Interview -->
+                    <div class="bg-white shadow-lg p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-6">KGO Radio Interview with David Seaborg</h2>
+                        <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                            <iframe src="https://www.youtube.com/embed/UmTU40mkSAE?wmode=opaque"
+                                    frameborder="0"
+                                    allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- The Borneo Project Section -->
+                    <div class="bg-white shadow-lg p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-6">The Borneo Project</h2>
+
+                        <div class="space-y-8">
+                            <!-- Video 2: Damming Our Future -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Damming Our Future</h3>
+                                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                                    <iframe src="https://player.vimeo.com/video/99071860"
+                                            frameborder="0"
+                                            webkitAllowFullScreen
+                                            mozallowfullscreen
+                                            allowFullScreen
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                                    </iframe>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    <a href="https://vimeo.com/99071860" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Damming Our Future</a> from
+                                    <a href="https://vimeo.com/user29471553" target="_blank" class="text-blue-600 hover:text-blue-700 underline">The Borneo Project</a> on
+                                    <a href="https://vimeo.com" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Vimeo</a>.
+                                </p>
+                            </div>
+
+                            <!-- Video 3: Commerce or Corruption? -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Commerce or Corruption?</h3>
+                                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                                    <iframe src="https://player.vimeo.com/video/126976673"
+                                            frameborder="0"
+                                            webkitAllowFullScreen
+                                            mozallowfullscreen
+                                            allowFullScreen
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                                    </iframe>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    <a href="https://vimeo.com/126976673" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Commerce or Corruption?</a> from
+                                    <a href="https://vimeo.com/user29471553" target="_blank" class="text-blue-600 hover:text-blue-700 underline">The Borneo Project</a> on
+                                    <a href="https://vimeo.com" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Vimeo</a>.
+                                </p>
+                            </div>
+
+                            <!-- Video 4: Broken Promises: Displaced by Dams -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Broken Promises: Displaced by Dams</h3>
+                                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                                    <iframe src="https://player.vimeo.com/video/130516168"
+                                            frameborder="0"
+                                            webkitAllowFullScreen
+                                            mozallowfullscreen
+                                            allowFullScreen
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                                    </iframe>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    <a href="https://vimeo.com/130516168" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Broken Promises: Displaced by Dams</a> from
+                                    <a href="https://vimeo.com/user29471553" target="_blank" class="text-blue-600 hover:text-blue-700 underline">The Borneo Project</a> on
+                                    <a href="https://vimeo.com" target="_blank" class="text-blue-600 hover:text-blue-700 underline">Vimeo</a>.
+                                </p>
+                            </div>
+
+                            <!-- Video 5: Borneo Project YouTube Video -->
+                            <div>
+                                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                                    <iframe src="https://www.youtube.com/embed/9QUScA_KRnM"
+                                            frameborder="0"
+                                            allowfullscreen
+                                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video 6: Amazon Watch -->
+                    <div class="bg-white shadow-lg p-8 rounded-lg">
+                        <h2 class="text-2xl font-bold text-emerald-900 mb-6">Amazon Watch</h2>
+                        <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                            <iframe src="https://www.youtube.com/embed/DVr_bUYYlcY"
+                                    frameborder="0"
+                                    allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-16 bg-emerald-50  p-8 text-center">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-4">Continue Learning</h2>
+                    <p class="text-gray-700 mb-6">
+                        Explore more resources to deepen your understanding of rainforest conservation.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="articles.html" class="inline-block bg-emerald-600 text-white px-8 py-3  font-semibold hover:bg-emerald-700 transition">
+                            Read Articles
+                        </a>
+                        <a href="books.html" class="inline-block border-2 border-emerald-600 text-blue-600 px-8 py-3  font-semibold hover:bg-emerald-50 transition">
+                            Recommended Books
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-red-600 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Take Action to Save Rainforests</h2>
+                <p class="text-xl mb-8">
+                    Now that you understand the critical importance of rainforest preservation, join us in making a difference.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="donate.html" class="inline-block border-2 border-white text-white px-8 py-4 font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition shadow-lg">
+                        Donate Now
+                    </a>
+                </div>
+                <p class="text-lg mt-6">
+                    Join our mailing list by emailing <a href="mailto:action@worldrainforest.org" class="text-blue-300 hover:text-blue-200 underline font-semibold">action@worldrainforest.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-4">
+                    The World Rainforest Fund is a tax-exempt <a href="legal-documents.html" class="text-blue-400 hover:text-blue-300 underline">501(c)(3) non-profit US corporation</a> (US tax EIN 94-2914127).
+                </p>
+                <p class="text-sm text-gray-400">
+                    Nature photography copyright <a href="https://photos.chienclee.com/" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Chien C. Lee</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
